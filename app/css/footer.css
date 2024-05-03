@@ -1,0 +1,10 @@
+@import "colors.css";
+
+
+footer {
+    background-color: var(--footer-color);
+    color: #ffffff;
+    border-radius: 16px;
+    margin: 16px;
+    padding: 1.5rem;
+}

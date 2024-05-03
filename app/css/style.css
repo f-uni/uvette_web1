@@ -1,0 +1,48 @@
+@import "colors.css";
+
+html, body {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--background-color);
+}
+
+header {
+    background-color: var(--footer-color);
+    color: #ffffff;
+    border-radius: 16px;
+    margin: 16px;
+    padding: 1.5rem;
+    font-size: 20px;
+}
+
+main {
+    flex:auto;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: row;
+}
+
+.side-menu{
+    flex:auto;
+    width: min-content;
+    max-width: 300px;
+    border: 2px solid #000;
+    margin: 16px;
+    border-radius: 16px;
+    padding: 1em;
+}
+
+.content{
+    flex: auto;
+    width: max-content;
+
+    background-color: #f400a1;
+}
+
