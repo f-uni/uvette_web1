@@ -2,6 +2,14 @@
 @import "scrollbar.css";
 @import "table.css";
 
+
+@font-face {
+    font-family: 'Tisa Sans Pro Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Tisa Sans Pro Regular'), url('Tisa.woff') format('woff');
+}
+
 html, body {
     height: 100%;
     width: 100%;
@@ -10,6 +18,8 @@ html, body {
 }
 
 body {
+    font-family:'Tisa Sans Pro Regular';
+    font-weight:normal;
     display: flex;
     flex-direction: column;
     background-color: var(--background-color);
@@ -19,32 +29,36 @@ header {
     background-color: var(--footer-color);
     color: #ffffff;
     border-radius: 16px;
-    margin: 16px;
+    margin-bottom: 8px;
     padding: 1.5rem;
     font-size: 20px;
+    box-shadow: 5px 4px 8px 0px #00000069;
 }
 
 main {
-    flex:auto;
+    flex:1;
     display: flex;
     flex-direction: row;
-    overflow-y: scroll;
+    overflow-y: hidden;
 }
 
 .side-menu{
-    flex:auto;
+    flex:1;
+    display: flex;
+    flex-direction: column;
     width: min-content;
     max-width: 300px;
-    border: 2px solid #000;
-    margin: 16px;
-    border-radius: 16px;
     padding: 1em;
-    
-    overflow-y: scroll;
+    border-radius: 16px;
+    border: 2px solid #000;
+    padding: 10px;
+    margin: 0px 10px;
+
 }
 
 #filter{
-    
+    flex-grow: 1;
+    overflow: auto;
 }
 
 .content{
@@ -52,4 +66,3 @@ main {
     width: max-content;
     overflow-y: scroll;
 }
-

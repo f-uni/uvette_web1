@@ -1,15 +1,15 @@
 @import "colors.css";
 
 table {
-    font-family: arial, sans-serif;
-    border-collapse: collapse;
     width: 100%;
+    border-spacing: 0px 4px;
+
 }
 
 table thead{
     position: sticky;
     top:0;
-    background-color: #60baaf;
+    background-color: var(--accent-color);
 }
 
 td,
@@ -24,10 +24,11 @@ tbody tr{
     background-color: #ffe0ef;
 }
 
-tbody tr :hover {
-    background-color: #ffe0ef;
+tbody tr:hover{
+    box-shadow: 0px 0px 20px 0px #fd7900;
 }
 
 tbody tr:nth-child(even) {
-    background-color: #ffc0df;
+    background-color: #ffe4f9;
+    
 }

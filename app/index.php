@@ -3,6 +3,7 @@
 
 <head>
     <link rel="stylesheet" href="/app/css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 
 <body>
@@ -10,174 +11,175 @@
         titolo
     </header>
     <main>
-        <div class="side-menu">
-            <?php
-            include "components/navbar.html"
-            ?>
-            <hr>
-            <div id="filter">
-                <form>
-                    <input type="text">
-                    <input type="submit">
+            <div class="side-menu">
+                <?php
+                include "components/navbar.html"
+                ?>
+                
+                <div id="filter">
+                    <form>
+                        <input type="text">
+                        <input type="submit">
 
-                    <input type="text">
-                    <input type="submit">
+                        <input type="text">
+                        <input type="submit">
 
-                    <input type="text">
-                    <input type="submit">
+                        <input type="text">
+                        <input type="submit">
 
-                    <input type="text">
-                    <input type="submit">
-                    <input type="text">
-                    <input type="submit">
+                        <input type="text">
+                        <input type="submit">
+                        <input type="text">
+                        <input type="submit">
 
-                    <input type="text">
-                    <input type="submit">
+                        <input type="text">
+                        <input type="submit">
 
-                    <input type="text">
-                    <input type="submit">
+                        <input type="text">
+                        <input type="submit">
 
-                    <input type="text">
-                    <input type="submit">
-                    <input type="text">
-                    <input type="submit">
+                        <input type="text">
+                        <input type="submit">
+                        <input type="text">
+                        <input type="submit">
 
-                    <input type="text">
-                    <input type="submit">
+                        <input type="text">
+                        <input type="submit">
 
-                    <input type="text">
-                    <input type="submit">
+                        <input type="text">
+                        <input type="submit">
 
-                    <input type="text">
-                    <input type="submit">
-                    <input type="text">
-                    <input type="submit">
+                        <input type="text">
+                        <input type="submit">
+                        <input type="text">
+                        <input type="submit">
 
-                    <input type="text">
-                    <input type="submit">
+                        <input type="text">
+                        <input type="submit">
 
-                    <input type="text">
-                    <input type="submit">
+                        <input type="text">
+                        <input type="submit">
 
-                    <input type="text">
-                    <input type="submit">
-                    <input type="text">
-                    <input type="submit">
+                        <input type="text">
+                        <input type="submit">
+                        <input type="text">
+                        <input type="submit">
 
-                    <input type="text">
-                    <input type="submit">
+                        <input type="text">
+                        <input type="submit">
 
-                    <input type="text">
-                    <input type="submit">
+                        <input type="text">
+                        <input type="submit">
 
-                    <input type="text">
-                    <input type="submit">
-                    <input type="text">
-                    <input type="submit">
+                        <input type="text">
+                        <input type="submit">
+                        <input type="text">
+                        <input type="submit">
 
-                    <input type="text">
-                    <input type="submit">
+                        <input type="text">
+                        <input type="submit">
 
-                    <input type="text">
-                    <input type="submit">
+                        <input type="text">
+                        <input type="submit">
 
-                    <input type="text">
-                    <input type="submit">
-                    <input type="text">
-                    <input type="submit">
+                        <input type="text">
+                        <input type="submit">
+                        <input type="text">
+                        <input type="submit">
 
-                    <input type="text">
-                    <input type="submit">
+                        <input type="text">
+                        <input type="submit">
 
-                    <input type="text">
-                    <input type="submit">
+                        <input type="text">
+                        <input type="submit">
 
-                    <input type="text">
-                    <input type="submit">
-                    <input type="text">
-                    <input type="submit">
+                        <input type="text">
+                        <input type="submit">
+                        <input type="text">
+                        <input type="submit">
 
-                    <input type="text">
-                    <input type="submit">
+                        <input type="text">
+                        <input type="submit">
 
-                    <input type="text">
-                    <input type="submit">
+                        <input type="text">
+                        <input type="submit">
 
-                    <input type="text">
-                    <input type="submit">
-                    <input type="text">
-                    <input type="submit">
+                        <input type="text">
+                        <input type="submit">
+                        <input type="text">
+                        <input type="submit">
 
-                    <input type="text">
-                    <input type="submit">
+                        <input type="text">
+                        <input type="submit">
 
-                    <input type="text">
-                    <input type="submit">
+                        <input type="text">
+                        <input type="submit">
 
-                    <input type="text">
-                    <input type="submit"><input type="text">
-                    <input type="submit">
+                        <input type="text">
+                        <input type="submit"><input type="text">
+                        <input type="submit">
 
-                    <input type="text">
-                    <input type="submit">
+                        <input type="text">
+                        <input type="submit">
 
-                    <input type="text">
-                    <input type="submit">
+                        <input type="text">
+                        <input type="submit">
 
-                    <input type="text">
-                    <input type="submit"><input type="text">
-                    <input type="submit">
+                        <input type="text">
+                        <input type="submit"><input type="text">
+                        <input type="submit">
 
-                    <input type="text">
-                    <input type="submit">
+                        <input type="text">
+                        <input type="submit">
 
-                    <input type="text">
-                    <input type="submit">
+                        <input type="text">
+                        <input type="submit">
 
-                    <input type="text">
-                    <input type="submit"><input type="text">
-                    <input type="submit">
+                        <input type="text">
+                        <input type="submit"><input type="text">
+                        <input type="submit">
 
-                    <input type="text">
-                    <input type="submit">
+                        <input type="text">
+                        <input type="submit">
 
-                    <input type="text">
-                    <input type="submit">
+                        <input type="text">
+                        <input type="submit">
 
-                    <input type="text">
-                    <input type="submit"><input type="text">
-                    <input type="submit">
+                        <input type="text">
+                        <input type="submit"><input type="text">
+                        <input type="submit">
 
-                    <input type="text">
-                    <input type="submit">
+                        <input type="text">
+                        <input type="submit">
 
-                    <input type="text">
-                    <input type="submit">
+                        <input type="text">
+                        <input type="submit">
 
-                    <input type="text">
-                    <input type="submit"><input type="text">
-                    <input type="submit">
+                        <input type="text">
+                        <input type="submit"><input type="text">
+                        <input type="submit">
 
-                    <input type="text">
-                    <input type="submit">
+                        <input type="text">
+                        <input type="submit">
 
-                    <input type="text">
-                    <input type="submit">
+                        <input type="text">
+                        <input type="submit">
 
-                    <input type="text">
-                    <input type="submit"><input type="text">
-                    <input type="submit">
+                        <input type="text">
+                        <input type="submit"><input type="text">
+                        <input type="submit">
 
-                    <input type="text">
-                    <input type="submit">
+                        <input type="text">
+                        <input type="submit">
 
-                    <input type="text">
-                    <input type="submit">
+                        <input type="text">
+                        <input type="submit">
 
-                    <input type="text">
-                    <input type="submit">
-                </form>
-            </div>
+                        <input type="text">
+                        <input type="submit">
+                    </form>
+                </div>
+            
         </div>
         <div class="content">
 
@@ -200,382 +202,458 @@
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
-                    </tr><tr>
+                    </tr>
+                    <tr>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
-                    </tr><tr>
+                    </tr>
+                    <tr>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
-                    </tr><tr>
+                    </tr>
+                    <tr>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
-                    </tr><tr>
+                    </tr>
+                    <tr>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
-                    </tr><tr>
+                    </tr>
+                    <tr>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
-                    </tr><tr>
+                    </tr>
+                    <tr>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
-                    </tr><tr>
+                    </tr>
+                    <tr>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
-                    </tr><tr>
+                    </tr>
+                    <tr>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
-                    </tr><tr>
+                    </tr>
+                    <tr>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
-                    </tr><tr>
+                    </tr>
+                    <tr>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
-                    </tr><tr>
+                    </tr>
+                    <tr>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
-                    </tr><tr>
+                    </tr>
+                    <tr>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
-                    </tr><tr>
+                    </tr>
+                    <tr>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
-                    </tr><tr>
+                    </tr>
+                    <tr>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
-                    </tr><tr>
+                    </tr>
+                    <tr>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
-                    </tr><tr>
+                    </tr>
+                    <tr>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
-                    </tr><tr>
+                    </tr>
+                    <tr>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
-                    </tr><tr>
+                    </tr>
+                    <tr>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
-                    </tr><tr>
+                    </tr>
+                    <tr>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
-                    </tr><tr>
+                    </tr>
+                    <tr>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
-                    </tr><tr>
+                    </tr>
+                    <tr>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
-                    </tr><tr>
+                    </tr>
+                    <tr>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
-                    </tr><tr>
+                    </tr>
+                    <tr>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
-                    </tr><tr>
+                    </tr>
+                    <tr>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
-                    </tr><tr>
+                    </tr>
+                    <tr>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
-                    </tr><tr>
+                    </tr>
+                    <tr>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
-                    </tr><tr>
+                    </tr>
+                    <tr>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
-                    </tr><tr>
+                    </tr>
+                    <tr>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
-                    </tr><tr>
+                    </tr>
+                    <tr>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
-                    </tr><tr>
+                    </tr>
+                    <tr>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
-                    </tr><tr>
+                    </tr>
+                    <tr>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
-                    </tr><tr>
+                    </tr>
+                    <tr>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
-                    </tr><tr>
+                    </tr>
+                    <tr>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
-                    </tr><tr>
+                    </tr>
+                    <tr>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
-                    </tr><tr>
+                    </tr>
+                    <tr>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
-                    </tr><tr>
+                    </tr>
+                    <tr>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
-                    </tr><tr>
+                    </tr>
+                    <tr>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
-                    </tr><tr>
+                    </tr>
+                    <tr>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
-                    </tr><tr>
+                    </tr>
+                    <tr>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
-                    </tr><tr>
+                    </tr>
+                    <tr>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
-                    </tr><tr>
+                    </tr>
+                    <tr>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
-                    </tr><tr>
+                    </tr>
+                    <tr>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
-                    </tr><tr>
+                    </tr>
+                    <tr>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
-                    </tr><tr>
+                    </tr>
+                    <tr>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
-                    </tr><tr>
+                    </tr>
+                    <tr>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
-                    </tr><tr>
+                    </tr>
+                    <tr>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
-                    </tr><tr>
+                    </tr>
+                    <tr>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
-                    </tr><tr>
+                    </tr>
+                    <tr>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
-                    </tr><tr>
+                    </tr>
+                    <tr>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
-                    </tr><tr>
+                    </tr>
+                    <tr>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
-                    </tr><tr>
+                    </tr>
+                    <tr>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
-                    </tr><tr>
+                    </tr>
+                    <tr>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
-                    </tr><tr>
+                    </tr>
+                    <tr>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
-                    </tr><tr>
+                    </tr>
+                    <tr>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
-                    </tr><tr>
+                    </tr>
+                    <tr>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
-                    </tr><tr>
+                    </tr>
+                    <tr>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
-                    </tr><tr>
+                    </tr>
+                    <tr>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
-                    </tr><tr>
+                    </tr>
+                    <tr>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
-                    </tr><tr>
+                    </tr>
+                    <tr>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
-                    </tr><tr>
+                    </tr>
+                    <tr>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
-                    </tr><tr>
+                    </tr>
+                    <tr>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
-                    </tr><tr>
+                    </tr>
+                    <tr>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
-                    </tr><tr>
+                    </tr>
+                    <tr>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
-                    </tr><tr>
+                    </tr>
+                    <tr>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
-                    </tr><tr>
+                    </tr>
+                    <tr>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
-                    </tr><tr>
+                    </tr>
+                    <tr>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
-                    </tr><tr>
+                    </tr>
+                    <tr>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
-                    </tr><tr>
+                    </tr>
+                    <tr>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
-                    </tr><tr>
+                    </tr>
+                    <tr>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
-                    </tr><tr>
+                    </tr>
+                    <tr>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
-                    </tr><tr>
+                    </tr>
+                    <tr>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
-                    </tr><tr>
+                    </tr>
+                    <tr>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
-                    </tr><tr>
+                    </tr>
+                    <tr>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
-                    </tr><tr>
+                    </tr>
+                    <tr>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
-                    </tr><tr>
+                    </tr>
+                    <tr>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
-                    </tr><tr>
+                    </tr>
+                    <tr>
                         <td>dato</td>
                         <td>dato</td>
                         <td>dato</td>
