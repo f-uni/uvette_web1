@@ -1,0 +1,33 @@
+@import "colors.css";
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table thead{
+    position: sticky;
+    top:0;
+    background-color: #60baaf;
+}
+
+td,
+th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    
+}
+
+tbody tr{
+    background-color: #ffe0ef;
+}
+
+tbody tr :hover {
+    background-color: #ffe0ef;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #ffc0df;
+}

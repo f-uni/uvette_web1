@@ -1,4 +1,6 @@
 @import "colors.css";
+@import "scrollbar.css";
+@import "table.css";
 
 html, body {
     height: 100%;
@@ -24,9 +26,9 @@ header {
 
 main {
     flex:auto;
-    overflow-y: scroll;
     display: flex;
     flex-direction: row;
+    overflow-y: scroll;
 }
 
 .side-menu{
@@ -37,12 +39,17 @@ main {
     margin: 16px;
     border-radius: 16px;
     padding: 1em;
+    
+    overflow-y: scroll;
+}
+
+#filter{
+    
 }
 
 .content{
     flex: auto;
     width: max-content;
-
-    background-color: #f400a1;
+    overflow-y: scroll;
 }
 
