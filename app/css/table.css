@@ -2,8 +2,7 @@
 
 table {
     width: 100%;
-    border-spacing: 0px 4px;
-
+    border-collapse: collapse;
 }
 
 table thead{
@@ -17,7 +16,6 @@ th {
     border: 1px solid #dddddd;
     text-align: left;
     padding: 8px;
-    
 }
 
 tbody tr{
@@ -25,10 +23,9 @@ tbody tr{
 }
 
 tbody tr:hover{
-    box-shadow: 0px 0px 20px 0px #fd7900;
+    border: 2px solid salmon;
 }
 
 tbody tr:nth-child(even) {
     background-color: #ffe4f9;
-    
 }

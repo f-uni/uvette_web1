@@ -3,15 +3,17 @@
     border-radius: 16px;
     display: flex;
     vertical-align: middle;
+    color: blueviolet;
 }
 
 .nav-item a{
     font-size: 24px;
     text-decoration: none;
+    color: blueviolet;
 }
 
 .nav-item .material-icons{
-    
+    margin-right: 0.5em;
     font-size: 30px;
 }
 
