@@ -8,6 +8,7 @@
 .nav-item a{
     font-size: 24px;
     text-decoration: none;
+    color: #FFFBB8;
 }
 
 .nav-item .material-icons{
@@ -16,5 +17,5 @@
 }
 
 .active{
-    background-color: aquamarine;
+    background-color: #F400A1;
 }

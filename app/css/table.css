@@ -10,13 +10,15 @@ table thead{
     position: sticky;
     top:0;
     background-color: var(--accent-color);
+    box-shadow: 5px -4px 8px 0px #00000069;
 }
 
 td,
 th {
-    border: 1px solid #dddddd;
+    border: 1px solid #EAF2EF;
     text-align: left;
     padding: 8px;
+    
     
 }
 
@@ -25,10 +27,10 @@ tbody tr{
 }
 
 tbody tr:hover{
-    box-shadow: 0px 0px 20px 0px #fd7900;
+    box-shadow: 0px 0px 10px 0px #ff00ff;
 }
 
 tbody tr:nth-child(even) {
-    background-color: #ffe4f9;
+    background-color: #E3A6D6;
     
 }
