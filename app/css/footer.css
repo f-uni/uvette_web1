@@ -3,11 +3,12 @@
 
 footer {
     background-color: var(--footer-color);
-    color: #ffffff;
+    color: #000000;
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
     margin: 0px 4px;
     margin-top: 16px;
-    padding: 1.5rem;
+    padding: 0.5rem;
     box-shadow: 5px -4px 8px 0px #00000069;
+    text-align: center;
 }
