@@ -12,15 +12,20 @@ input{
     line-height: 24px;
     padding: 8px;
     position: relative;
-    transition-duration: 2s;
+    transition-duration: 0.3s;
     transition-property: background-color, border-color, box-shadow, color;
     vertical-align: top;
     width: 100%;
     box-sizing: border-box;
     margin-bottom: 1em;
     font-size: 16px;
-}
 
+}
+input:focus{
+    border-color: var(--accent-color) !important;
+    outline:none;
+
+}
 input[type="date"]::-webkit-inner-spin-button {
     display: none;
 }
@@ -49,6 +54,7 @@ input[type=submit]{
     cursor: pointer;
     width: auto;
     font-size: 20px;
+    align-self: center;
   }
 
 .submit-text {
