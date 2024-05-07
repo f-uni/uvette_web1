@@ -3,13 +3,13 @@
     border-radius: 16px;
     display: flex;
     vertical-align: middle;
-    color: blueviolet;
+    color: #4A4A4A;
 }
 
 .nav-item a{
     font-size: 24px;
     text-decoration: none;
-    color: blueviolet;
+    color: #4A4A4A;
 }
 
 .nav-item .material-icons{
@@ -17,6 +17,22 @@
     font-size: 30px;
 }
 
-.active{
-    background-color: aquamarine;
+.active a{
+    color: var(--accent-color) !important;
+}
+
+.active .material-icons{
+    color: var(--accent-color) !important;
+}
+
+.nav-item:hover{
+    background-color: var(--contrast-color);
+}
+
+.nav-item:hover a{
+    color: var(--accent-color);
+}
+
+.nav-item:hover .material-icons{
+    color: var(--accent-color);
 }
