@@ -17,168 +17,20 @@
                 <?php
                 include "components/navbar.html"
                 ?>
-                
+                <hr>
                 <div id="filter">
-                    <form>
-                        <input type="text">
-                        <input type="submit">
+                    <form action="#">
+                        <label for="testo">Testo</label>
+                        <input type="text" placeholder="Testo" name="testo">
+                        
+                        <label for="data">Data</label>
+                        <input type="date" placeholder="Data Inizio" name="data">
 
-                        <input type="text">
-                        <input type="submit">
+                        <label for="numero">Numero</label>
+                        <input type="number" placeholder="Numero" name="numero">
+                        <br>
+                        <input type="submit" value="Invia">
 
-                        <input type="text">
-                        <input type="submit">
-
-                        <input type="text">
-                        <input type="submit">
-                        <input type="text">
-                        <input type="submit">
-
-                        <input type="text">
-                        <input type="submit">
-
-                        <input type="text">
-                        <input type="submit">
-
-                        <input type="text">
-                        <input type="submit">
-                        <input type="text">
-                        <input type="submit">
-
-                        <input type="text">
-                        <input type="submit">
-
-                        <input type="text">
-                        <input type="submit">
-
-                        <input type="text">
-                        <input type="submit">
-                        <input type="text">
-                        <input type="submit">
-
-                        <input type="text">
-                        <input type="submit">
-
-                        <input type="text">
-                        <input type="submit">
-
-                        <input type="text">
-                        <input type="submit">
-                        <input type="text">
-                        <input type="submit">
-
-                        <input type="text">
-                        <input type="submit">
-
-                        <input type="text">
-                        <input type="submit">
-
-                        <input type="text">
-                        <input type="submit">
-                        <input type="text">
-                        <input type="submit">
-
-                        <input type="text">
-                        <input type="submit">
-
-                        <input type="text">
-                        <input type="submit">
-
-                        <input type="text">
-                        <input type="submit">
-                        <input type="text">
-                        <input type="submit">
-
-                        <input type="text">
-                        <input type="submit">
-
-                        <input type="text">
-                        <input type="submit">
-
-                        <input type="text">
-                        <input type="submit">
-                        <input type="text">
-                        <input type="submit">
-
-                        <input type="text">
-                        <input type="submit">
-
-                        <input type="text">
-                        <input type="submit">
-
-                        <input type="text">
-                        <input type="submit">
-                        <input type="text">
-                        <input type="submit">
-
-                        <input type="text">
-                        <input type="submit">
-
-                        <input type="text">
-                        <input type="submit">
-
-                        <input type="text">
-                        <input type="submit"><input type="text">
-                        <input type="submit">
-
-                        <input type="text">
-                        <input type="submit">
-
-                        <input type="text">
-                        <input type="submit">
-
-                        <input type="text">
-                        <input type="submit"><input type="text">
-                        <input type="submit">
-
-                        <input type="text">
-                        <input type="submit">
-
-                        <input type="text">
-                        <input type="submit">
-
-                        <input type="text">
-                        <input type="submit"><input type="text">
-                        <input type="submit">
-
-                        <input type="text">
-                        <input type="submit">
-
-                        <input type="text">
-                        <input type="submit">
-
-                        <input type="text">
-                        <input type="submit"><input type="text">
-                        <input type="submit">
-
-                        <input type="text">
-                        <input type="submit">
-
-                        <input type="text">
-                        <input type="submit">
-
-                        <input type="text">
-                        <input type="submit"><input type="text">
-                        <input type="submit">
-
-                        <input type="text">
-                        <input type="submit">
-
-                        <input type="text">
-                        <input type="submit">
-
-                        <input type="text">
-                        <input type="submit"><input type="text">
-                        <input type="submit">
-
-                        <input type="text">
-                        <input type="submit">
-
-                        <input type="text">
-                        <input type="submit">
-
-                        <input type="text">
-                        <input type="submit">
                     </form>
                 </div>
             

@@ -1,0 +1,58 @@
+@import "colors.css";
+
+input{
+    align-items: center;
+    appearance: none;
+    border-radius: 16px;
+    border-style: solid;
+    border-width: 2px;
+    box-shadow: none;
+    display: inline-flex;
+    justify-content: flex-start;
+    line-height: 24px;
+    padding: 8px;
+    position: relative;
+    transition-duration: 2s;
+    transition-property: background-color, border-color, box-shadow, color;
+    vertical-align: top;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 1em;
+    font-size: 16px;
+}
+
+input[type="date"]::-webkit-inner-spin-button {
+    display: none;
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+    position: absolute;
+    right: 0;
+    margin-right: 10px;
+}
+
+#filter form{
+    padding: 0.50em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: center;
+    font-size: 18px;
+}
+
+input[type=submit]{
+    background-color: var(--accent-color);
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: auto;
+    font-size: 20px;
+  }
+
+.submit-text {
+    display: block;
+    margin: auto;
+}
+
