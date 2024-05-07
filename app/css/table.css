@@ -12,13 +12,15 @@ table thead{
     font-size: 24px;
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
+    
+    border-radius: 16px;
 }
 
 thead tr th{
     background-color: #F5B5F5;
 }
 
-td{
+td, th{
     text-align: left;
     padding: 8px;
 }
