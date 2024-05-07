@@ -26,7 +26,7 @@
 }
 
 .nav-item:hover{
-    background-color: var(--contrast-color);
+    background-color: var(--contrast-color-soft);
 }
 
 .nav-item:hover a{
