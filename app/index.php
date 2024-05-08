@@ -9,40 +9,46 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 <?php
-    $page="home";
+$page = "home";
 
 ?>
+
 <body>
-    <?php include "components/header.html" ?>
-    
+    <?php include "components/header.php" ?>
+
     <main>
-            <div class="side-menu">
-                <?php
-                include "components/navbar.php"
-                ?>
-                <hr>
-                <div id="filter">
-                    <form action="#">
-                        <label for="nomeutente">Nome utente</label>
-                        <input type="text" placeholder="Nome utente" name="nomeutente">
-                        
-                        
-                        <label for="testo">Testo</label>
-                        <input type="text" placeholder="Testo" name="testo">
+        <div id="toggler-side-menu">
+            <div class="container">
+                <i class="material-icons">arrow_right</i>
+            </div>
+        </div>
+        <div class="side-menu">
+            <?php
+            include "components/navbar.php"
+            ?>
+            <hr>
+            <div id="filter">
+                <form action="#">
+                    <label for="nomeutente">Nome utente</label>
+                    <input type="text" placeholder="Nome utente" name="nomeutente">
 
-                        
-                        <label for="testo">Testo</label>
-                        <input type="text" placeholder="Testo" name="testo">
 
-                        
-                        <label for="testo">Testo</label>
-                        <input type="text" placeholder="Testo" name="testo">
+                    <label for="testo">Testo</label>
+                    <input type="text" placeholder="Testo" name="testo">
 
-                        <input type="submit" value="Invia">
 
-                    </form>
-                </div>
-            
+                    <label for="testo">Testo</label>
+                    <input type="text" placeholder="Testo" name="testo">
+
+
+                    <label for="testo">Testo</label>
+                    <input type="text" placeholder="Testo" name="testo">
+
+                    <input type="submit" value="Invia">
+
+                </form>
+            </div>
+
         </div>
         <div class="content">
             Noi facciamo le cose e le facciamo male

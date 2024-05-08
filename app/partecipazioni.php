@@ -13,7 +13,7 @@
     
 ?>
 <body>
-    <?php include "components/header.html" ?>
+    <?php include "components/header.php" ?>
     
     <main>
             <div class="side-menu">

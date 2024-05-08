@@ -15,6 +15,8 @@ a{
 .nav-item .material-icons {
     margin-right: 0.5em;
     font-size: 30px;
+    
+    transition: ease-in 0.25s;
 }
 
 a .active  {
