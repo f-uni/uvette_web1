@@ -16,7 +16,6 @@
     $stmt = $conn->prepare($sql, [PDO::ATTR_CURSOR => PDO::CURSOR_FWDONLY]);
     $stmt->execute([]);
     $result = $stmt->fetchAll();
-    print_r($result);
 
 ?>
 
@@ -60,12 +59,17 @@
                     <th>Email</th>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>dato</td>
-                        <td>dato</td>
-                        <td>dato</td>
-                        <td>dato</td>
-                    </tr>
+                    <?php
+                        foreach($result as $row){
+                            echo "<tr>
+                                <td>{$row['nome_utente']}</td>
+                                <td>{$row['nome']}</td>
+                                <td>{$row['cognome']}</td>
+                                <td>{$row['email']}</td>
+                                <td>dato</td>
+                            </tr>";
+                        }
+                    ?>
                 </tbody>
 
             </table>
