@@ -9,13 +9,13 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 <?php
-    include "util/connect.php";
-    $page = "utenti";
+include "util/connect.php";
+$page = "utenti";
 
-    $sql = 'SELECT * FROM utente';
-    $stmt = $conn->prepare($sql, [PDO::ATTR_CURSOR => PDO::CURSOR_FWDONLY]);
-    $stmt->execute([]);
-    $result = $stmt->fetchAll();
+$sql = 'SELECT * FROM utente';
+$stmt = $conn->prepare($sql, [PDO::ATTR_CURSOR => PDO::CURSOR_FWDONLY]);
+$stmt->execute([]);
+$result = $stmt->fetchAll();
 
 ?>
 
@@ -50,17 +50,17 @@
 
         </div>
         <div class="content">
-
-            <table>
-                <thead>
-                    <th>Nome utente</th>
-                    <th>Nome</th>
-                    <th>Cognome</th>
-                    <th>Email</th>
-                </thead>
-                <tbody>
-                    <?php
-                        foreach($result as $row){
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <th>Nome utente</th>
+                        <th>Nome</th>
+                        <th>Cognome</th>
+                        <th>Email</th>
+                    </thead>
+                    <tbody>
+                        <?php
+                        foreach ($result as $row) {
                             echo "<tr>
                                 <td>{$row['nome_utente']}</td>
                                 <td>{$row['nome']}</td>
@@ -68,10 +68,10 @@
                                 <td>{$row['email']}</td>
                             </tr>";
                         }
-                    ?>
-                </tbody>
-
-            </table>
+                        ?>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </main>
     <?php

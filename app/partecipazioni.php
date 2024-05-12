@@ -519,7 +519,6 @@ $page = "partecipazioni";
                             <td>dato</td>
                         </tr>
                     </tbody>
-
                 </table>
             </div>
         </div>
