@@ -16,7 +16,6 @@
     $stmt = $conn->prepare($sql, [PDO::ATTR_CURSOR => PDO::CURSOR_FWDONLY]);
     $stmt->execute([]);
     $result = $stmt->fetchAll();
-    print_r($result);
     
 ?>
 <body>
@@ -56,13 +55,17 @@
                     <th>Data Fine</th>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>utente</td>
-                        <td>titolo bello bello</td>
-                        <td>12/12/2012</td>
-                        <td>12/12/2013</td>
-                    </tr>
+                    <?php
+                        foreach($result as $row){
+                            echo "<tr>
+                                    <td>{$row['codice']}</td>
+                                    <td>{$row['creatore']}</td>
+                                    <td>{$row['titolo']}</td>
+                                    <td>{$row['data_inizio']}</td>
+                                    <td>{$row['data_fine']}</td>
+                                </tr>";
+                        }
+                    ?>
                 </tbody>
 
             </table>
