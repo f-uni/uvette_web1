@@ -66,7 +66,6 @@
                                 <td>{$row['nome']}</td>
                                 <td>{$row['cognome']}</td>
                                 <td>{$row['email']}</td>
-                                <td>dato</td>
                             </tr>";
                         }
                     ?>
