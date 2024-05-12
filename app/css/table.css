@@ -28,7 +28,6 @@ td, th{
 tbody tr{
     background-color: #f2d7f2;
     transition: cubic-bezier(0.01, 0.25, 0.72, 0.84) 0.5s;
-    cursor: pointer;
 }
 
 tbody tr:nth-child(even) {
@@ -36,6 +35,7 @@ tbody tr:nth-child(even) {
 }
 
 tbody .selectable:hover{
+    cursor: pointer;
     background-color: var(--contrast-color-soft) !important;    
 }
 
