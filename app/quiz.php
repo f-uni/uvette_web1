@@ -11,7 +11,12 @@
 <?php
     include "util/connect.php";
     $page="quiz";
-    
+
+    $sql = 'SELECT * FROM quiz';
+    $stmt = $conn->prepare($sql, [PDO::ATTR_CURSOR => PDO::CURSOR_FWDONLY]);
+    $stmt->execute([]);
+    $result = $stmt->fetchAll();
+    print_r($result);
     
 ?>
 <body>
