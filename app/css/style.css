@@ -89,10 +89,7 @@ main {
 .content {
     flex: auto;
     width: max-content;
-    overflow-y: scroll;
-    padding: 1em;
     border-radius: 16px;
-    padding: 10px;
     margin: 10px;
     box-shadow: 5px 4px 8px 0px #00000069;
     background-color: white;
