@@ -1,5 +1,12 @@
 @import "colors.css";
 
+
+.table-wrapper{
+    height: 100%;
+    overflow-y: scroll;
+}
+
+
 /* top-left border-radius */
 table tr:first-child th:first-child {
     border-top-left-radius: 16px;
@@ -31,6 +38,13 @@ table thead {
     position: sticky;
     top: 0;
     font-size: 24px;
+    display: table-caption;
+    background-color: white;
+}
+
+table thead tr{
+    display: table;
+    width: 100%;
 }
 
 thead tr th {
@@ -55,17 +69,4 @@ tbody tr:nth-child(even) {
 tbody .selectable:hover {
     cursor: pointer;
     background-color: var(--contrast-color-soft) !important;
-}
-
-table tbody {
-    display: block;
-    max-height: 300px;
-    overflow-y: scroll;
-}
-
-table thead,
-table tbody tr {
-    display: table;
-    width: 100%;
-    table-layout: fixed;
 }
