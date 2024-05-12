@@ -56,3 +56,16 @@ tbody .selectable:hover {
     cursor: pointer;
     background-color: var(--contrast-color-soft) !important;
 }
+
+table tbody {
+    display: block;
+    max-height: 300px;
+    overflow-y: scroll;
+}
+
+table thead,
+table tbody tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
