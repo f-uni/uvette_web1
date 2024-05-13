@@ -13,7 +13,7 @@
 include "util/connect.php";
 $page = "quiz";
 
-$sql = 'SELECT * FROM quiz';
+$sql = 'SELECT * FROM quiz WHERE 1=1 ';
 $params=[];
 if (array_key_exists('titolo', $_GET)) {
     $sql .= ' AND titolo like :titolo ';
