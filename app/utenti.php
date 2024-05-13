@@ -16,7 +16,7 @@ $sql = 'SELECT * FROM utente WHERE 1=1';
 $params=[];
 if (array_key_exists('nome_utente', $_GET)) {
     $sql .= ' AND nome_utente like :nome_utente ';
-    $params["nome_utente"] = $_GET["nome_utente"]."%";
+    $params["nome_utente"] = "%".$_GET["nome_utente"]."%";
 }
 if (array_key_exists('nome', $_GET)) {
     $sql .= ' AND nome like :nome ';

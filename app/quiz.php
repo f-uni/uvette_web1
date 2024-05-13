@@ -17,11 +17,11 @@ $sql = 'SELECT * FROM quiz WHERE 1=1 ';
 $params=[];
 if (array_key_exists('titolo', $_GET)) {
     $sql .= ' AND titolo like :titolo ';
-    $params["titolo"] = $_GET["titolo"]."%";
+    $params["titolo"] = "%".$_GET["titolo"]."%";
 }
 if (array_key_exists('creatore', $_GET)) {
     $sql .= ' AND creatore like :creatore ';
-    $params["creatore"] = $_GET["creatore"]."%";
+    $params["creatore"] = "%".$_GET["creatore"]."%";
 }
 if (array_key_exists('data_inizio', $_GET)) {
     if (array_key_exists('data_fine', $_GET)) {
