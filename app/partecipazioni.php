@@ -58,7 +58,7 @@ $result = $stmt->fetchAll();
                     <tbody>
                         <?php
                             foreach ($result as $row) {
-                                echo "<tr>
+                                echo "<tr class='selectable'>
                                     <td>{$row['codice']}</td>
                                     <td>{$row['utente']}</td>
                                     <td>{$row['quiz']}</td>
