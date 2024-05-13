@@ -46,7 +46,7 @@ $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
             ?>
             <hr>
             <div id="filter">
-                <form action="#">
+                <form action="">
                     <label for="nomeutente">Nome utente</label>
                     <input type="text" placeholder="Nome utente" name="nome_utente">
 

@@ -50,7 +50,7 @@ $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
             ?>
             <hr>
             <div id="filter">
-                <form action=".">
+                <form action="">
 
                     <label for="titolo">Titolo</label>
                     <input type="text" placeholder="Titolo" name="titolo">
