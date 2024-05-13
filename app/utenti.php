@@ -26,6 +26,10 @@ if (array_key_exists('cognome', $_GET)) {
     $sql .= ' AND cognome like %:cognome% ';
     $params["cognome"] = $_GET["cognome"];
 }
+if (array_key_exists('email', $_GET)) {
+    $sql .= ' AND email like %:email% ';
+    $params["email"] = $_GET["email"];
+}
 $stmt = $conn->prepare($sql, [PDO::ATTR_CURSOR => PDO::CURSOR_FWDONLY]);
 $stmt->execute($params);
 $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
@@ -44,7 +48,7 @@ $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
             <div id="filter">
                 <form action="#">
                     <label for="nomeutente">Nome utente</label>
-                    <input type="text" placeholder="Nome utente" name="nomeutente">
+                    <input type="text" placeholder="Nome utente" name="nome_utente">
 
 
                     <label for="nome">Nome</label>
