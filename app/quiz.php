@@ -7,6 +7,7 @@
 
     <link rel="stylesheet" href="/app/css/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="js/quiz.js"></script>
 </head>
 <?php
 include "util/connect.php";
@@ -15,7 +16,7 @@ $page = "quiz";
 $sql = 'SELECT * FROM quiz';
 $stmt = $conn->prepare($sql, [PDO::ATTR_CURSOR => PDO::CURSOR_FWDONLY]);
 $stmt->execute([]);
-$result = $stmt->fetchAll();
+$result = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 ?>
 
@@ -58,7 +59,8 @@ $result = $stmt->fetchAll();
                     <tbody>
                         <?php
                         foreach ($result as $row) {
-                            echo "<tr class='selectable'>
+                            $json=json_encode($row);
+                            echo "<tr class='selectable'  onclick='displayQuiz(".$json.")'>
                                     <td>{$row['codice']}</td>
                                     <td>{$row['creatore']}</td>
                                     <td>{$row['titolo']}</td>

@@ -15,7 +15,7 @@ $page = "utenti";
 $sql = 'SELECT * FROM utente';
 $stmt = $conn->prepare($sql, [PDO::ATTR_CURSOR => PDO::CURSOR_FWDONLY]);
 $stmt->execute([]);
-$result = $stmt->fetchAll();
+$result = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 ?>
 

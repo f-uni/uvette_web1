@@ -7,6 +7,7 @@
 
     <link rel="stylesheet" href="/app/css/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="js/partecipazioni.js"></script>
 </head>
 <?php
 include "util/connect.php";
@@ -15,7 +16,7 @@ $page = "partecipazioni";
 $sql = 'SELECT partecipazione.*, quiz.titolo as titolo FROM partecipazione INNER JOIN quiz ON quiz.codice=partecipazione.quiz';
 $stmt = $conn->prepare($sql, [PDO::ATTR_CURSOR => PDO::CURSOR_FWDONLY]);
 $stmt->execute([]);
-$result = $stmt->fetchAll();
+$result = $stmt->fetchAll(PDO::FETCH_ASSOC);
 ?>
 
 <body>
@@ -77,13 +78,5 @@ $result = $stmt->fetchAll();
     include "components/footer.html"
     ?>
 </body>
-
-<script>
-
-    function displayPartecipazione(value){
-        console.log(value);
-    }
-</script>
-
 
 </html>
