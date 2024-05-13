@@ -15,21 +15,24 @@ $page = "quiz";
 
 $sql = 'SELECT * FROM quiz';
 $params=[];
-if (array_key_exists('nome_utente', $_GET)) {
-    $sql .= ' AND nome_utente like :nome_utente ';
-    $params["nome_utente"] = "%".$_GET["nome_utente"]."%";
+if (array_key_exists('titolo', $_GET)) {
+    $sql .= ' AND titolo like :titolo ';
+    $params["titolo"] = $_GET["titolo"]."%";
 }
-if (array_key_exists('nome', $_GET)) {
-    $sql .= ' AND nome like :nome ';
-    $params["nome"] = "%".$_GET["nome"]."%";
+if (array_key_exists('creatore', $_GET)) {
+    $sql .= ' AND creatore like :creatore ';
+    $params["creatore"] = $_GET["creatore"]."%";
 }
-if (array_key_exists('cognome', $_GET)) {
-    $sql .= ' AND cognome like :cognome ';
-    $params["cognome"] = "%".$_GET["cognome"]."%";
-}
-if (array_key_exists('email', $_GET)) {
-    $sql .= ' AND email like :email ';
-    $params["email"] = "%".$_GET["email"]."%";
+if (array_key_exists('data_inizio', $_GET)) {
+    if (array_key_exists('data_fine', $_GET)) {
+
+    }else{
+
+    }
+}else{
+    if (array_key_exists('data_fine', $_GET)) {
+
+    }
 }
 $stmt = $conn->prepare($sql, [PDO::ATTR_CURSOR => PDO::CURSOR_FWDONLY]);
 $stmt->execute($params);
@@ -61,8 +64,6 @@ $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
                     <label for="data_fine">Data Fine</label>
                     <input type="date"name="data_fine">
 
-                    <label for="numero">Numero</label>
-                    <input type="number" placeholder="Numero" name="numero">
                     <br>
                     <input type="submit" value="Invia">
 
