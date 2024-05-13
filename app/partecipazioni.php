@@ -59,8 +59,7 @@ $result = $stmt->fetchAll();
                         <?php
                             foreach ($result as $row) {
                                 $json=json_encode($row);
-                                $onclick="()=>{ var row = \\'".$json."\\'; console.log(row);}";
-                                echo "<tr class='selectable' onclick='{$onclick}'>
+                                echo "<tr class='selectable' onclick='displayPartecipazione(".$json.")'>
                                     <td>{$row['codice']}</td>
                                     <td>{$row['utente']}</td>
                                     <td>{$row['quiz']}</td>
@@ -78,5 +77,13 @@ $result = $stmt->fetchAll();
     include "components/footer.html"
     ?>
 </body>
+
+<script>
+
+    function displayPartecipazione(value){
+        console.log(value);
+    }
+</script>
+
 
 </html>
