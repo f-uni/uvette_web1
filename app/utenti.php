@@ -12,9 +12,22 @@
 include "util/connect.php";
 $page = "utenti";
 
-$sql = 'SELECT * FROM utente';
+$sql = 'SELECT * FROM utente WHERE 1=1';
+$params=[];
+if (array_key_exists('nome_utente', $_GET)) {
+    $sql .= ' AND nome_utente like %:nome_utente% ';
+    $params["nome_utente"] = $_GET["nome_utente"];
+}
+if (array_key_exists('nome', $_GET)) {
+    $sql .= ' AND nome like %:nome% ';
+    $params["nome"] = $_GET["nome"];
+}
+if (array_key_exists('cognome', $_GET)) {
+    $sql .= ' AND cognome like %:cognome% ';
+    $params["cognome"] = $_GET["cognome"];
+}
 $stmt = $conn->prepare($sql, [PDO::ATTR_CURSOR => PDO::CURSOR_FWDONLY]);
-$stmt->execute([]);
+$stmt->execute($params);
 $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 ?>
