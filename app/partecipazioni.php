@@ -59,7 +59,7 @@ $result = $stmt->fetchAll();
                         <?php
                             foreach ($result as $row) {
                                 $json=json_encode($row);
-                                $onclick="()=>{ var row = '".$json."'; console.log(row);}";
+                                $onclick="()=>{ var row = \\'".$json."\\'; console.log(row);}";
                                 echo "<tr class='selectable' onclick='{$onclick}'>
                                     <td>{$row['codice']}</td>
                                     <td>{$row['utente']}</td>
