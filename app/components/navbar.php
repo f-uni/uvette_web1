@@ -1,6 +1,6 @@
 <link rel="stylesheet" href="/app/css/navbar.css">
 <nav>
-    <a href="/app/index.php">
+    <a href="/app/">
         <div class="nav-item <?php if($page=="home") echo "active";?>">
             <i class="material-icons">home</i>
             Home

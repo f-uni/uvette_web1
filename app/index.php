@@ -26,28 +26,7 @@ $page = "home";
             <?php
             include "components/navbar.php"
             ?>
-            <hr>
-            <div id="filter">
-                <form action="#">
-                    <label for="nomeutente">Nome utente</label>
-                    <input type="text" placeholder="Nome utente" name="nomeutente">
-
-
-                    <label for="testo">Testo</label>
-                    <input type="text" placeholder="Testo" name="testo">
-
-
-                    <label for="testo">Testo</label>
-                    <input type="text" placeholder="Testo" name="testo">
-
-
-                    <label for="testo">Testo</label>
-                    <input type="text" placeholder="Testo" name="testo">
-
-                    <input type="submit" value="Invia">
-
-                </form>
-            </div>
+            
 
         </div>
         <div class="content">
