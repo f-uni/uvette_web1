@@ -52,7 +52,7 @@ $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 
                     <label for="nome">Nome</label>
-                    <input type="text" placeholder="Nome" name="nome">
+                    <input type="text" placeholder="Nome" name="nome" value="<?php echo $_GET["nome"];?>">
 
 
                     <label for="cognome">Cognome</label>
