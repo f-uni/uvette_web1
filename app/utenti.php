@@ -14,9 +14,15 @@ $page = "utenti";
 
 $sql = 'SELECT utente.*, (CASE 
             WHEN partecipazione.codice IS NULL THEN 0
-            ELSE COUNT(*)
-            END) AS partecipazioni FROM utente 
+            ELSE COUNT(partecipazione.codice)
+            END) AS partecipazioni, 
+            (CASE 
+            WHEN quiz.codice IS NULL THEN 0
+            ELSE COUNT(quiz.codice)
+            END) AS quiz,
+        FROM utente 
         LEFT JOIN partecipazione ON utente.nome_utente=partecipazione.utente
+        LEFT JOIN quiz ON utente.nome_utente=quiz.creatore
         WHERE 1=1 ';
 $params=[];
 if (array_key_exists('nome_utente', $_GET)) {
@@ -85,7 +91,8 @@ $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
                         <th>Nome</th>
                         <th>Cognome</th>
                         <th>Email</th>
-                        <th>Partecipazioni</th>
+                        <th>Partite</th>
+                        <th>Quiz creati</th>
                     </thead>
                     <tbody>
                         <?php
@@ -96,7 +103,7 @@ $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
                                 <td>{$row['cognome']}</td>
                                 <td>{$row['email']}</td>
                                 <td>{$row['partecipazioni']}</td>
-                                
+                                <td>{$row['quiz']}</td>
                             </tr>";
                         }
                         ?>
