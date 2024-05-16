@@ -19,7 +19,7 @@ $sql = 'SELECT utente.*, (CASE
             (CASE 
             WHEN quiz.codice IS NULL THEN 0
             ELSE COUNT(quiz.codice)
-            END) AS quiz,
+            END) AS quiz
         FROM utente 
         LEFT JOIN partecipazione ON utente.nome_utente=partecipazione.utente
         LEFT JOIN quiz ON utente.nome_utente=quiz.creatore
