@@ -12,7 +12,10 @@
 include "util/connect.php";
 $page = "utenti";
 
-$sql = 'SELECT * FROM utente WHERE 1=1 ';
+$sql = 'SELECT utente.*, COUNT(*) AS partecipazioni FROM utente 
+        LEFT JOIN partecipazione ON utente.nome_utente=partecipazione.utente
+        GROUP BY utente.nome_utente
+        WHERE 1=1 ';
 $params=[];
 if (array_key_exists('nome_utente', $_GET)) {
     $sql .= 'AND nome_utente like :nome_utente ';
@@ -77,6 +80,7 @@ $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
                         <th>Nome</th>
                         <th>Cognome</th>
                         <th>Email</th>
+                        <th>Partecipazioni</th>
                     </thead>
                     <tbody>
                         <?php
@@ -86,6 +90,8 @@ $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
                                 <td>{$row['nome']}</td>
                                 <td>{$row['cognome']}</td>
                                 <td>{$row['email']}</td>
+                                <td>{$row['partecipazioni']}</td>
+                                
                             </tr>";
                         }
                         ?>
