@@ -35,7 +35,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     margin-right: 10px;
 }
 
-#filter form{
+form{
     padding: 0.50em;
     display: flex;
     flex-direction: column;

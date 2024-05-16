@@ -23,7 +23,10 @@ $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
     <?php include "components/header.php" ?>
 
     <main>
-        <div class="side-menu">
+        <div id="toggler-side-menu" onclick='document.getElementById("side-menu").classList.toggle("open");'>
+            <i class="material-icons">menu</i>
+        </div>
+        <div id="side-menu">
             <?php
             include "components/navbar.php"
             ?>

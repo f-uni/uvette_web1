@@ -17,12 +17,10 @@ $page = "home";
     <?php include "components/header.php" ?>
 
     <main>
-        <div id="toggler-side-menu">
-            <div class="container">
-                <i class="material-icons">arrow_right</i>
-            </div>
+        <div id="toggler-side-menu" onclick='document.getElementById("side-menu").classList.toggle("open");'>
+            <i class="material-icons">menu</i>
         </div>
-        <div class="side-menu">
+        <div id="side-menu">
             <?php
             include "components/navbar.php"
             ?>
@@ -37,5 +35,7 @@ $page = "home";
     include "components/footer.html"
     ?>
 </body>
-
+<script>
+    
+</script>
 </html>

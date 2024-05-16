@@ -12,22 +12,22 @@
 include "util/connect.php";
 $page = "utenti";
 
-$sql = 'SELECT * FROM utente WHERE 1=1';
+$sql = 'SELECT * FROM utente WHERE 1=1 ';
 $params=[];
 if (array_key_exists('nome_utente', $_GET)) {
-    $sql .= ' AND nome_utente like :nome_utente ';
+    $sql .= 'AND nome_utente like :nome_utente ';
     $params["nome_utente"] = "%".$_GET["nome_utente"]."%";
 }
 if (array_key_exists('nome', $_GET)) {
-    $sql .= ' AND nome like :nome ';
+    $sql .= 'AND nome like :nome ';
     $params["nome"] = $_GET["nome"]."%";
 }
 if (array_key_exists('cognome', $_GET)) {
-    $sql .= ' AND cognome like :cognome ';
+    $sql .= 'AND cognome like :cognome ';
     $params["cognome"] = $_GET["cognome"]."%";
 }
 if (array_key_exists('email', $_GET)) {
-    $sql .= ' AND email like :email ';
+    $sql .= 'AND email like :email ';
     $params["email"] = "%".$_GET["email"]."%";
 }
 $stmt = $conn->prepare($sql, [PDO::ATTR_CURSOR => PDO::CURSOR_FWDONLY]);
@@ -40,7 +40,10 @@ $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
     <?php include "components/header.php" ?>
 
     <main>
-        <div class="side-menu">
+        <div id="toggler-side-menu" onclick='document.getElementById("side-menu").classList.toggle("open");'>
+            <i class="material-icons">menu</i>
+        </div>
+        <div id="side-menu">
             <?php
             include "components/navbar.php"
             ?>

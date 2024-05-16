@@ -16,11 +16,11 @@ $page = "quiz";
 $sql = 'SELECT * FROM quiz WHERE 1=1 ';
 $params=[];
 if (array_key_exists('titolo', $_GET)) {
-    $sql .= ' AND titolo like :titolo ';
+    $sql .= 'AND titolo like :titolo ';
     $params["titolo"] = "%".$_GET["titolo"]."%";
 }
 if (array_key_exists('creatore', $_GET)) {
-    $sql .= ' AND creatore like :creatore ';
+    $sql .= 'AND creatore like :creatore ';
     $params["creatore"] = "%".$_GET["creatore"]."%";
 }
 if (array_key_exists('data_inizio', $_GET)) {
@@ -44,7 +44,10 @@ $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
     <?php include "components/header.php" ?>
 
     <main>
-        <div class="side-menu">
+        <div id="toggler-side-menu" onclick='document.getElementById("side-menu").classList.toggle("open");'>
+            <i class="material-icons">menu</i>
+        </div>
+        <div id="side-menu">
             <?php
             include "components/navbar.php"
             ?>

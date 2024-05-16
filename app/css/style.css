@@ -2,6 +2,7 @@
 @import "scrollbar.css";
 @import "table.css";
 @import "input.css";
+@import "sidemenu.css";
 
 
 @font-face {
@@ -32,55 +33,6 @@ main {
     display: flex;
     flex-direction: row;
     overflow-y: hidden;
-}
-
-.side-menu {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    width: min-content;
-    max-width: 300px;
-    padding: 1em;
-    padding: 10px;
-    margin: 10px;
-    box-shadow: 5px 4px 8px 0px #00000069;
-    background-color: white;
-    margin-left: 0;
-    border-top-right-radius: 16px;
-    border-bottom-right-radius: 16px;
-
-    @media screen and (max-width: 600px) {
-        width: 0;
-        display: none;
-    }
-}
-
-#toggler-side-menu {
-    border-radius: 40px;
-    background-color: white;
-    height: 40px;
-    width: 40px;
-    box-shadow: 5px 4px 8px 0px #00000069;
-    position: fixed;
-    top: 50%;
-    display: none;
-
-    @media screen and (max-width: 600px) {
-        display: block;
-    }
-    .container {
-        display: inline-flex;
-        vertical-align: middle;
-
-    }
-}
-
-
-.side-menu hr {
-    margin: 20px 10px;
-    height: 2px;
-    background-color: var(--accent-color);
-    border: none;
 }
 
 #filter {
