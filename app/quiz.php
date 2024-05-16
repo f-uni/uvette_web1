@@ -53,10 +53,10 @@ $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
                 <form action="">
 
                     <label for="titolo">Titolo</label>
-                    <input type="text" placeholder="Titolo" name="titolo">
+                    <input type="text" placeholder="Titolo" name="titolo" value="<?php echo $_GET["titolo"];?>">
 
                     <label for="creatore">Creatore</label>
-                    <input type="text" placeholder="Creatore" name="creatore">
+                    <input type="text" placeholder="Creatore" name="creatore" value="<?php echo $_GET["creatore"];?>">
 
                     <label for="data_inizio">Data Inizio</label>
                     <input type="date"name="data_inizio">

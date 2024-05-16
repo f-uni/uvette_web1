@@ -48,19 +48,19 @@ $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
             <div id="filter">
                 <form action="">
                     <label for="nomeutente">Nome utente</label>
-                    <input type="text" placeholder="Nome utente" name="nome_utente">
+                    <input type="text" placeholder="Nome utente" name="nome_utente" value="<?php echo $_GET["nome_utente"];?>">
 
 
                     <label for="nome">Nome</label>
-                    <input type="text" placeholder="Nome" name="nome">
+                    <input type="text" placeholder="Nome" name="nome" value="<?php echo $_GET["nome"];?>">
 
 
                     <label for="cognome">Cognome</label>
-                    <input type="text" placeholder="Cognome" name="cognome">
+                    <input type="text" placeholder="Cognome" name="cognome" value="<?php echo $_GET["cognome"];?>">
 
 
                     <label for="email">Email</label>
-                    <input type="text" placeholder="Email" name="email">
+                    <input type="text" placeholder="Email" name="email" value="<?php echo $_GET["email"];?>">
                     <input type="submit">
                 </form>
             </div>
