@@ -12,7 +12,10 @@
 include "util/connect.php";
 $page = "utenti";
 
-$sql = 'SELECT utente.*, COUNT(*) AS partecipazioni FROM utente 
+$sql = 'SELECT utente.*, (CASE 
+            WHEN partecipazione.codice IS NULL THEN 0
+            ELSE COUNT(*)
+            END) AS partecipazioni FROM utente 
         LEFT JOIN partecipazione ON utente.nome_utente=partecipazione.utente
         WHERE 1=1 ';
 $params=[];
