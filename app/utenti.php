@@ -14,7 +14,6 @@ $page = "utenti";
 
 $sql = 'SELECT utente.*, COUNT(*) AS partecipazioni FROM utente 
         LEFT JOIN partecipazione ON utente.nome_utente=partecipazione.utente
-        GROUP BY utente.nome_utente
         WHERE 1=1 ';
 $params=[];
 if (array_key_exists('nome_utente', $_GET)) {
@@ -33,6 +32,9 @@ if (array_key_exists('email', $_GET)) {
     $sql .= 'AND email like :email ';
     $params["email"] = "%".$_GET["email"]."%";
 }
+
+$sql.= 'GROUP BY utente.nome_utente';
+
 $stmt = $conn->prepare($sql, [PDO::ATTR_CURSOR => PDO::CURSOR_FWDONLY]);
 $stmt->execute($params);
 $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
