@@ -9,5 +9,5 @@ jsCloseBtn.onclick=(e) => {
 function displayPartecipazione(row){
     dialog.showModal();
     $("#input-utente").val(row.nome_utente)
-    console.log(value);
+    console.log(row);
 }
