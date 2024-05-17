@@ -1,7 +1,7 @@
 const dialog = document.getElementById("UDdialog");
 const createDialog = document.getElementById("Cdialog");
 
-$("#js-close").onclick((e) => {
+$("#js-close").click((e) => {
   e.preventDefault();
   dialog.close();
 });
