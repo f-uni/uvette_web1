@@ -113,20 +113,22 @@ $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
         </div>
     </main>
     <dialog id="dialog">
+        
+        <button id="deleteBtn" value="default">Elimina</button>
         <form>
-            <p>
-                <label for="utente">Utente</label>
-                <input type="text" placeholder="Utente" name="utente">
+            
+            <label for="utente">Utente</label>
+            <input type="text" placeholder="Utente" name="utente" id="input-utente">
 
-                <label for="titolo">Titolo Quiz</label>
-                <input type="text" placeholder="Titolo Quiz" name="titolo">
-                
-                <label for="data">Data partecipazione</label>
-                <input type="date"name="data" >
-            </p>
+            <label for="titolo">Titolo Quiz</label>
+            <input type="text" placeholder="Titolo Quiz" name="titolo">
+            
+            <label for="data">Data partecipazione</label>
+            <input type="date"name="data" >
+            
             <div>
-                <button id="js-close" formmethod="dialog">Cancel</button>
-                <button id="confirmBtn" value="default">Confirm</button>
+                <button id="js-close" formmethod="dialog">Annulla</button>
+                <button id="confirmBtn" value="default">Modifica</button>
             </div>
         </form>
     </dialog>
