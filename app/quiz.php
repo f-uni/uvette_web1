@@ -27,8 +27,8 @@ if (array_key_exists('creatore', $_GET)) {
     $sql .= 'AND creatore like :creatore ';
     $params["creatore"] = "%".$_GET["creatore"]."%";
 }
-if (array_key_exists('data_inizio', $_GET)) {
-    if (array_key_exists('data_fine', $_GET)) {
+if (array_key_exists('data_inizio', $_GET) && $_GET["data_inizio"]!="") {
+    if (array_key_exists('data_fine', $_GET) && $_GET["data_fine"]!="") {
         //entrambe le date
         echo "dati";
         $sql .= 'AND (data_inizio BETWEEN :data_inizio AND :data_fine) AND (data_fine BETWEEN :data_inizio AND :data_fine)';
@@ -38,7 +38,7 @@ if (array_key_exists('data_inizio', $_GET)) {
 
     }
 }else{
-    if (array_key_exists('data_fine', $_GET)) {
+    if (array_key_exists('data_fine', $_GET) && $_GET["data_fine"]!="") {
 
     }
 }
