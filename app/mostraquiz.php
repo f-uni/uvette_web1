@@ -32,7 +32,7 @@ $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
                 <div class="domanda">
                     <?php
                     foreach ($result as $row){ ?>
-                        <p class='testodomanda'> DOMANDA 1. <?php echo $row ['testo'] ?> </p> 
+                        <p class='testodomanda'> DOMANDA <?php echo $row['numero'].". ".$row['testo'] ?> </p> 
                     
                         <div class="risposte">
                         <?php
