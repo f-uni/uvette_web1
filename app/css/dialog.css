@@ -38,6 +38,9 @@ dialog button{
 #js-close{
     background-color: grey;
 }
+#js-close-create{
+    background-color: grey;
+}
 
 #deleteBtn{
     background-color: rgb(255, 64, 64);
