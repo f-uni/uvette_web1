@@ -42,3 +42,11 @@ dialog button{
 #deleteBtn{
     background-color: rgb(255, 64, 64);
 }
+
+#create{
+    position: absolute;
+    bottom: 10%;
+    right: 100px;
+    border-radius: 16px;
+    font-size: 30px;
+}
