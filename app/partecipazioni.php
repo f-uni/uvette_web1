@@ -111,7 +111,7 @@ $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
                     </tbody>
                 </table>
                 
-                <button id="create-btn"><i class="material-icons">add</i><p>Aggiungi</p></button>
+                <button id="create-btn"><i class="material-icons">add</i></button>
             </div>
         </div>
     </main>
