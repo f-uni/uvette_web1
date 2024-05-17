@@ -115,9 +115,9 @@ $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
     </main>
     <dialog id="UDdialog">
         <div class="actions">
-            <button id="deleteBtn" value="default">Elimina</button>
+            <button id="deleteBtn" value="default"><i class="material-icons">delete</i>Elimina</button>
         </div>
-        
+         
         <form>
             
             <label for="utente">Utente</label>
@@ -134,7 +134,7 @@ $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
             <input type="date"name="data" id="input-data" >
             
             <div class="actions">
-                <button id="updateBtn" value="default">Modifica</button>
+                <button id="updateBtn" value="default"><i class="material-icons">edit</i>Modifica</button>
                 <button id="js-close" formmethod="dialog">Annulla</button>
             </div>
         </form>
@@ -164,6 +164,8 @@ $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
     <?php
     include "components/footer.html"
     ?>
+
+    <button id="create"><i class="material-icons">add</i></button>
 </body>
 <script src="js/partecipazioni.js"></script>  
 </html>

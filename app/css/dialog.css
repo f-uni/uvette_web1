@@ -30,8 +30,9 @@ dialog button{
     width: auto;
     font-size: 20px;
     align-self: center;
-    
     border-radius: 16px;
+    display: flex;
+    flex-direction: row;
 }
 
 #js-close{
@@ -39,5 +40,5 @@ dialog button{
 }
 
 #deleteBtn{
-    background-color: red;
+    background-color: rgb(255, 64, 64);
 }
