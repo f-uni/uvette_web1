@@ -1,20 +1,20 @@
 const dialog = document.getElementById("UDdialog");
 const createDialog = document.getElementById("Cdialog");
 
-$("#js-close").onclick=(e) => {
+$("#js-close").click((e) => {
   e.preventDefault();
   dialog.close();
-};
+});
 
-$("#js-close-create").onclick=(e) => {
+$("#js-close-create").click((e) => {
     e.preventDefault();
     createDialog.close();
-};
+})
 
-$("#create").onclick=(e) => {
+$("#create-btn").click((e) => {
     console.log("click")
     createDialog.showModal();
-};
+});
 
 function displayPartecipazione(row){
     dialog.showModal();
