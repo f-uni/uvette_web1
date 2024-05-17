@@ -45,7 +45,7 @@ $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
                         $risposte = $stmt->fetchAll(PDO::FETCH_ASSOC);
                         
                         foreach ($risposte as $risp){
-                            echo $risp;
+                            echo $risp['testo'];
                         }
                         ?>
                     </div>
