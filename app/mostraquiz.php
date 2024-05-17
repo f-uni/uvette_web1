@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="/app/css/mostraquiz.css">
 </head>
 <?php
-$quiz = 1;
+$quiz = $_GET['quiz'];
 include "util/connect.php";
 $sql = 'SELECT *
         FROM domanda 
