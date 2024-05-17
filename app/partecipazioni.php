@@ -14,7 +14,8 @@
 include "util/connect.php";
 $page = "partecipazioni";
 
-$sql = 'SELECT partecipazione.*, quiz.titolo as titolo FROM partecipazione 
+$sql = 'SELECT partecipazione.codice, partecipazione.utente, partecipazione.quiz, CAST(partecipazione.data AS DATE) AS data, quiz.titolo as titolo 
+        FROM partecipazione 
         INNER JOIN quiz ON quiz.codice=partecipazione.quiz WHERE 1=1 ';
 
 
