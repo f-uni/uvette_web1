@@ -113,7 +113,7 @@ $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
             </div>
         </div>
     </main>
-    <dialog id="dialog">
+    <dialog id="UDdialog">
         <div class="actions">
             <button id="deleteBtn" value="default">Elimina</button>
         </div>
@@ -134,8 +134,30 @@ $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
             <input type="date"name="data" id="input-data" >
             
             <div class="actions">
-                <button id="confirmBtn" value="default">Modifica</button>
+                <button id="updateBtn" value="default">Modifica</button>
                 <button id="js-close" formmethod="dialog">Annulla</button>
+            </div>
+        </form>
+    </dialog>
+
+    <dialog id="Cdialog">
+        
+        <form>
+            <label for="utente">Utente</label>
+            <input type="text" placeholder="Utente" name="utente" id="input-utente-create">
+            
+            <label for="quiz">Codice Quiz</label>
+            <input type="number" placeholder="Codice Quiz" name="quiz" id="input-quiz-create">
+            
+            <label for="titolo">Titolo Quiz</label>
+            <input type="text" placeholder="Titolo Quiz" name="titolo" id="input-titolo-quiz-create" disabled>
+            
+            <label for="data">Data partecipazione</label>
+            <input type="date"name="data" id="input-data-create" >
+            
+            <div class="actions">
+                <button id="confirmBtn" value="default">Salva</button>
+                <button id="js-close-create" formmethod="dialog">Annulla</button>
             </div>
         </form>
     </dialog>
