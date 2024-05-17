@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="/app/css/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">  
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <script src="js/partecipazioni.js"></script>  
+
 </head>
 <?php
 include "util/connect.php";
@@ -134,5 +134,5 @@ $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
     include "components/footer.html"
     ?>
 </body>
-
+<script src="js/partecipazioni.js"></script>  
 </html>
