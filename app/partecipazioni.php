@@ -134,8 +134,8 @@ $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
             <input type="date"name="data" id="input-data" >
             
             <div class="actions">
-                <button id="js-close" formmethod="dialog">Annulla</button>
                 <button id="confirmBtn" value="default">Modifica</button>
+                <button id="js-close" formmethod="dialog">Annulla</button>
             </div>
         </form>
     </dialog>

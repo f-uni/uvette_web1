@@ -1,13 +1,7 @@
 @import "colors.css";
 
 ::backdrop {
-    background-image: linear-gradient(
-      45deg,
-      magenta,
-      rebeccapurple,
-      dodgerblue,
-      green
-    );
+    background-color: rgba(0, 0, 0, 0.321);
     opacity: 0.75;
   }
 
@@ -26,8 +20,7 @@ dialog form{
 
 dialog .actions{
     display: flex;
-    flex-direction: row;
-    align-items: end;
+    flex-direction: row-reverse;
 }
 
 dialog button{
@@ -45,6 +38,10 @@ dialog button{
     border-radius: 16px;
 }
 
+#js-close{
+    background-color: grey;
+}
+
 #deleteBtn{
-    float: right;
+    background-color: red;
 }
