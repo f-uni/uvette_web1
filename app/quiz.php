@@ -31,8 +31,8 @@ if (array_key_exists('data_inizio', $_GET) && $_GET["data_inizio"]!="") {
     if (array_key_exists('data_fine', $_GET) && $_GET["data_fine"]!="") {
         //entrambe le date
         $sql .= 'AND ((data_inizio BETWEEN :data_inizio AND :data_fine) AND (data_fine BETWEEN :data_inizio AND :data_fine)) ';
-        $params["data_inizio"] = $_GET["data_inizio"];
-        $params["data_fine"] = $_GET["data_fine"];
+        $params["data_inizio"] = $_GET["data_inizio"]." 00:00:00";
+        $params["data_fine"] = $_GET["data_fine"]." 23:59:59";
     }else{
 
     }
