@@ -10,15 +10,15 @@
     <link rel="stylesheet" href="/app/css/mostraquiz.css">
 </head>
 <?php
+$quiz = 1;
 include "util/connect.php";
 $sql = 'SELECT *
         FROM domanda 
         WHERE quiz=:quiz';
 
 $stmt = $conn->prepare($sql, [PDO::ATTR_CURSOR => PDO::CURSOR_FWDONLY]);
-$stmt->execute(['quiz'=>1]);
+$stmt->execute(['quiz'=>$quiz]);
 $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
-echo $result;
 ?>
 
 <body>
@@ -33,19 +33,21 @@ echo $result;
                     <?php
                     foreach ($result as $row){ ?>
                         <p class='testodomanda'> DOMANDA 1. <?php echo $row ['testo'] ?> </p> 
-                    <div class="risposte">
-                        <p>
-                            R1 arcobaleno
-                        </p>
-                        <p>
-                            R2 arcobaleno
-                        </p>
-                        <p>
-                            R3 arcobaleno
-                        </p>
-                        <p>
-                            R4 arcobaleno
-                        </p>
+                    
+                        <div class="risposte">
+                        <?php
+                        $sql = 'SELECT *
+                                FROM risposta 
+                                WHERE quiz=:quiz AND domanda=:domanda';
+                        
+                        $stmt = $conn->prepare($sql, [PDO::ATTR_CURSOR => PDO::CURSOR_FWDONLY]);
+                        $stmt->execute(['quiz'=>$quiz, 'domanda'=>$row['numero']]);
+                        $risposte = $stmt->fetchAll(PDO::FETCH_ASSOC);
+                        
+                        foreach ($risposte as $risp){
+                            echo $risp;
+                        }
+                        ?>
                     </div>
                     <?php
                     }
