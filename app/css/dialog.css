@@ -56,4 +56,8 @@ dialog button{
     display: flex;
     padding: 10px;
     box-shadow: 5px 4px 8px 0px #00000069;
+    background-color: white;
+    .material-icons{
+        color: var(--accent-color);
+    }
 }
