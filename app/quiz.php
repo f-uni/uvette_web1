@@ -14,7 +14,8 @@
 include "util/connect.php";
 $page = "quiz";
 
-$sql = 'SELECT * FROM quiz WHERE 1=1 ';
+$sql = 'SELECT codice, titolo, creatore, CAST(data_inizio AS DATE) AS data_inizio, CAST(data_fine AS DATE) AS data_fine 
+FROM quiz WHERE 1=1 ';
 $params = [];
 if (array_key_exists('codice', $_GET) && $_GET["codice"] != "") {
     $sql .= 'AND codice = :codice ';
