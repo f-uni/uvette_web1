@@ -114,8 +114,10 @@ $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
         </div>
     </main>
     <dialog id="dialog">
+        <div class="actions">
+            <button id="deleteBtn" value="default">Elimina</button>
+        </div>
         
-        <button id="deleteBtn" value="default">Elimina</button>
         <form>
             
             <label for="utente">Utente</label>
