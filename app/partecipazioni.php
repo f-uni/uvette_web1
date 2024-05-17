@@ -34,14 +34,18 @@ $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
             <hr>
             <div id="filter">
                 <form action="#">
-                    <label for="testo">Testo</label>
-                    <input type="text" placeholder="Testo" name="testo">
+                    <label for="utente">Utente</label>
+                    <input type="text" placeholder="Utente" name="utente">
 
-                    <label for="data">Data</label>
-                    <input type="date" placeholder="Data Inizio" name="data">
+                    <label for="titolo">Titolo</label>
+                    <input type="text" placeholder="Titolo" name="titolo" value="<?php echo $_GET["titolo"];?>">
 
-                    <label for="numero">Numero</label>
-                    <input type="number" placeholder="Numero" name="numero">
+                    <label for="data_inizio">Data Inizio</label>
+                    <input type="date"name="data_inizio" value="<?php echo $_GET["data_inizio"];?>">
+                    
+                    <label for="data_fine">Data Fine</label>
+                    <input type="date"name="data_fine" value="<?php echo $_GET["data_fine"];?>">
+
                     <br>
                     <input type="submit" value="Invia">
 

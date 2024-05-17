@@ -75,6 +75,8 @@ $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
                     <label for="creatore">Creatore</label>
                     <input type="text" placeholder="Creatore" name="creatore" value="<?php echo $_GET["creatore"];?>">
 
+                    <p>Ricerca quiz attivi</p>
+
                     <label for="data_inizio">Data Inizio</label>
                     <input type="date"name="data_inizio" value="<?php echo $_GET["data_inizio"];?>">
                     
