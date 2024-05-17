@@ -43,7 +43,7 @@ dialog button{
     background-color: rgb(255, 64, 64);
 }
 
-#create{
+#create-btn{
     position: absolute;
     bottom: 10%;
     right: 100px;
