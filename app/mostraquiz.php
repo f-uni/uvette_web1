@@ -44,6 +44,7 @@ $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
                         $stmt->execute(['quiz'=>$quiz, 'domanda'=>$row['numero']]);
                         $risposte = $stmt->fetchAll(PDO::FETCH_ASSOC);
                         
+                        shuffle($risposte);
                         foreach ($risposte as $risp){
                             echo "<p>".$risp['testo']."</p>";
                         }
