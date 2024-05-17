@@ -69,7 +69,7 @@ $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
                     <input type="text" placeholder="Creatore" name="creatore" value="<?php echo $_GET["creatore"];?>">
 
                     <label for="data_inizio">Data Inizio</label>
-                    <input type="date"name="data_inizio">
+                    <input type="datetime"name="data_inizio">
                     
                     <label for="data_fine">Data Fine</label>
                     <input type="date"name="data_fine">
