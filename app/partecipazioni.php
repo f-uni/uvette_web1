@@ -167,6 +167,6 @@ $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
     include "components/footer.html"
     ?>
 
-</body>
-<script src="js/partecipazioni.js"></script>  
+<script src="js/partecipazioni.js"></script> 
+</body> 
 </html>
