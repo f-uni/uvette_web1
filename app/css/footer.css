@@ -7,8 +7,8 @@ footer {
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
     margin: 0px 4px;
-    margin-top: 16px;
+    margin-top: 8px;
     padding: 0.5rem;
-    box-shadow: 5px -4px 8px 0px #00000069;
+    box-shadow: 4px -1px 7px 0px #00000069;
     text-align: center;
 }
