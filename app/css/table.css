@@ -52,6 +52,10 @@ th {
     padding: 8px;
 }
 
+td a{
+    color: var(--accent-color);
+}
+
 tbody tr {
     background-color: #f2d7f2;
     transition: cubic-bezier(0.01, 0.25, 0.72, 0.84) 0.5s;
