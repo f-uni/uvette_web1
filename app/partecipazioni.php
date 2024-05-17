@@ -120,8 +120,12 @@ $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
             <label for="utente">Utente</label>
             <input type="text" placeholder="Utente" name="utente" id="input-utente">
 
+            
+            <label for="quiz">Codice Quiz</label>
+            <input type="number" placeholder="Codice Quiz" name="quiz" id="input-quiz">
+            
             <label for="titolo">Titolo Quiz</label>
-            <input type="text" placeholder="Titolo Quiz" name="titolo">
+            <input type="text" placeholder="Titolo Quiz" name="titolo" id="input-titolo-quiz" disabled>
             
             <label for="data">Data partecipazione</label>
             <input type="date"name="data" >
