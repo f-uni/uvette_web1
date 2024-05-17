@@ -54,6 +54,7 @@ th {
 
 td a{
     color: var(--accent-color);
+    text-decoration: underline;
 }
 
 tbody tr {

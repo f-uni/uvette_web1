@@ -111,7 +111,7 @@ $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
                             echo "<tr class='selectable'  onclick='displayQuiz(" . $json . ")'>
                                     <td>{$row['codice']}</td>
                                     <td>{$row['titolo']}</td>
-                                    <td>{$row['creatore']}</td>
+                                    <td><a href='/app/utente.php?nome_utente={$row['creatore']}'>{$row['creatore']}</a></td>
                                     <td>{$row['data_inizio']}</td>
                                     <td>{$row['data_fine']}</td>
                                 </tr>";
