@@ -12,6 +12,16 @@
 <?php
 $quiz = $_GET['quiz'];
 include "util/connect.php";
+
+$sql = 'SELECT *
+        FROM quiz 
+        WHERE codice=:quiz';
+
+$stmt = $conn->prepare($sql, [PDO::ATTR_CURSOR => PDO::CURSOR_FWDONLY]);
+$stmt->execute(['quiz'=>$quiz]);
+$result = $stmt->fetchAll(PDO::FETCH_ASSOC);
+$titolo = $result[0]['titolo'];
+
 $sql = 'SELECT *
         FROM domanda 
         WHERE quiz=:quiz';
@@ -27,12 +37,12 @@ $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
     <main>
         <div class="content">
-           <p class="intestazione"> Stai guardando il Quiz: X </p>
+           <p class="intestazione"> Stai guardando il Quiz: <?php echo $titolo; ?> </p>
             <div>
                 <div class="domanda">
                     <?php
                     foreach ($result as $row){ ?>
-                        <p class='testodomanda'> DOMANDA <?php echo $row['numero'].". ".$row['testo'] ?> </p> 
+                        <p class='testodomanda'> DOMANDA <?php echo $row['numero'].". ".$row['testo']; ?> </p> 
                     
                         <div class="risposte">
                         <?php
