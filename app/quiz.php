@@ -15,6 +15,10 @@ $page = "quiz";
 
 $sql = 'SELECT * FROM quiz WHERE 1=1 ';
 $params=[];
+if (array_key_exists('codice', $_GET)) {
+    $sql .= 'AND codice = :codice ';
+    $params["codice"] = $_GET["codice"];
+}
 if (array_key_exists('titolo', $_GET)) {
     $sql .= 'AND titolo like :titolo ';
     $params["titolo"] = "%".$_GET["titolo"]."%";
@@ -54,6 +58,9 @@ $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
             <hr>
             <div id="filter">
                 <form action="">
+                    
+                    <label for="codice">Codice</label>
+                    <input type="number" placeholder="Codice" name="codice" value="<?php echo $_GET["codice"];?>">
 
                     <label for="titolo">Titolo</label>
                     <input type="text" placeholder="Titolo" name="titolo" value="<?php echo $_GET["titolo"];?>">
