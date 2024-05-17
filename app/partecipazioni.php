@@ -14,7 +14,36 @@ include "util/connect.php";
 $page = "partecipazioni";
 
 $sql = 'SELECT partecipazione.*, quiz.titolo as titolo FROM partecipazione 
-        INNER JOIN quiz ON quiz.codice=partecipazione.quiz';
+        INNER JOIN quiz ON quiz.codice=partecipazione.quiz WHERE 1=1 ';
+
+
+if (array_key_exists('titolo', $_GET)) {
+    $sql .= 'AND titolo like :titolo ';
+    $params["titolo"] = "%".$_GET["titolo"]."%";
+}
+if (array_key_exists('utente', $_GET)) {
+    $sql .= 'AND utente like :utente ';
+    $params["utente"] = "%".$_GET["utente"]."%";
+}
+if (array_key_exists('data_inizio', $_GET) && $_GET["data_inizio"]!="") {
+    if (array_key_exists('data_fine', $_GET) && $_GET["data_fine"]!="") {
+        //entrambe le date
+        $sql .= 'AND (data BETWEEN :data_inizio AND :data_fine) ';
+        $params["data_inizio"] = $_GET["data_inizio"]." 00:00:00";
+        $params["data_fine"] = $_GET["data_fine"]." 23:59:59";
+    }else{
+        //solo data inizio
+        $sql .= 'AND data >= :data_inizio ';
+        $params["data_inizio"] = $_GET["data_inizio"]." 00:00:00";
+    }
+}else{
+    if (array_key_exists('data_fine', $_GET) && $_GET["data_fine"]!="") {
+        //solo data fine
+        $sql .= 'AND data <= :data_fine ';
+        $params["data_fine"] = $_GET["data_fine"]." 23:59:59";
+    }
+}
+
 $stmt = $conn->prepare($sql, [PDO::ATTR_CURSOR => PDO::CURSOR_FWDONLY]);
 $stmt->execute([]);
 $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
@@ -35,10 +64,10 @@ $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
             <div id="filter">
                 <form action="#">
                     <label for="utente">Utente</label>
-                    <input type="text" placeholder="Utente" name="utente">
+                    <input type="text" placeholder="Utente" name="utente" value="<?php echo $_GET["utente"];?>" >
 
-                    <label for="titolo">Titolo</label>
-                    <input type="text" placeholder="Titolo" name="titolo" value="<?php echo $_GET["titolo"];?>">
+                    <label for="titolo">Titolo Quiz</label>
+                    <input type="text" placeholder="Titolo Quiz" name="titolo" value="<?php echo $_GET["titolo"];?>">
 
                     <label for="data_inizio">Data Inizio</label>
                     <input type="date"name="data_inizio" value="<?php echo $_GET["data_inizio"];?>">
