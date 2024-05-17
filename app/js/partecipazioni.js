@@ -12,6 +12,7 @@ $("#js-close-create").onclick=(e) => {
 };
 
 $("#create").onclick=(e) => {
+    console.log("click")
     createDialog.showModal();
 };
 
