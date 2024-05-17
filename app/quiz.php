@@ -35,13 +35,13 @@ if (array_key_exists('data_inizio', $_GET) && $_GET["data_inizio"]!="") {
         $params["data_fine"] = $_GET["data_fine"]." 23:59:59";
     }else{
         //solo data inizio
-        $sql .= 'AND data_inizio >= :data_inizio ';
+        $sql .= 'AND data_inizio >= :data_inizio ORDER BY data_inizio';
         $params["data_inizio"] = $_GET["data_inizio"]." 00:00:00";
     }
 }else{
     if (array_key_exists('data_fine', $_GET) && $_GET["data_fine"]!="") {
         //solo data fine
-        $sql .= 'AND data_fine <= :data_fine ';
+        $sql .= 'AND data_fine <= :data_fine ORDER BY data_fine';
         $params["data_fine"] = $_GET["data_fine"]." 23:59:59";
     }
 }
