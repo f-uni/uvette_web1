@@ -30,6 +30,7 @@ if (array_key_exists('creatore', $_GET)) {
 if (array_key_exists('data_inizio', $_GET)) {
     if (array_key_exists('data_fine', $_GET)) {
         //entrambe le date
+        echo "dati";
         $sql .= 'AND (data_inizio BETWEEN :data_inizio AND :data_fine) AND (data_fine BETWEEN :data_inizio AND :data_fine)';
         $params["data_inizio"] = $_GET["data_inizio"];
         $params["data_fine"] = $_GET["data_fine"];
