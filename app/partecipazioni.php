@@ -110,6 +110,8 @@ $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
                         ?>
                     </tbody>
                 </table>
+                
+                <button id="create"><i class="material-icons">add</i></button>
             </div>
         </div>
     </main>
@@ -165,7 +167,6 @@ $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
     include "components/footer.html"
     ?>
 
-    <button id="create"><i class="material-icons">add</i></button>
 </body>
 <script src="js/partecipazioni.js"></script>  
 </html>
