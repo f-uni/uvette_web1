@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="/app/css/style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <script src="js/partecipazioni.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">  
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="js/partecipazioni.js"></script>  
 </head>
 <?php
 include "util/connect.php";
@@ -111,6 +112,24 @@ $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
             </div>
         </div>
     </main>
+    <dialog id="dialog">
+        <form>
+            <p>
+                <label for="utente">Utente</label>
+                <input type="text" placeholder="Utente" name="utente">
+
+                <label for="titolo">Titolo Quiz</label>
+                <input type="text" placeholder="Titolo Quiz" name="titolo">
+                
+                <label for="data">Data partecipazione</label>
+                <input type="date"name="data" >
+            </p>
+            <div>
+                <button value="cancel" formmethod="dialog">Cancel</button>
+                <button id="confirmBtn" value="default">Confirm</button>
+            </div>
+        </form>
+    </dialog>
     <?php
     include "components/footer.html"
     ?>

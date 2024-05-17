@@ -7,6 +7,7 @@
 
     <link rel="stylesheet" href="/app/css/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="js/quiz.js"></script>
 </head>
 <?php
@@ -14,35 +15,35 @@ include "util/connect.php";
 $page = "quiz";
 
 $sql = 'SELECT * FROM quiz WHERE 1=1 ';
-$params=[];
-if (array_key_exists('codice', $_GET) && $_GET["codice"]!="") {
+$params = [];
+if (array_key_exists('codice', $_GET) && $_GET["codice"] != "") {
     $sql .= 'AND codice = :codice ';
     $params["codice"] = $_GET["codice"];
 }
 if (array_key_exists('titolo', $_GET)) {
     $sql .= 'AND titolo like :titolo ';
-    $params["titolo"] = "%".$_GET["titolo"]."%";
+    $params["titolo"] = "%" . $_GET["titolo"] . "%";
 }
 if (array_key_exists('creatore', $_GET)) {
     $sql .= 'AND creatore like :creatore ';
-    $params["creatore"] = "%".$_GET["creatore"]."%";
+    $params["creatore"] = "%" . $_GET["creatore"] . "%";
 }
-if (array_key_exists('data_inizio', $_GET) && $_GET["data_inizio"]!="") {
-    if (array_key_exists('data_fine', $_GET) && $_GET["data_fine"]!="") {
+if (array_key_exists('data_inizio', $_GET) && $_GET["data_inizio"] != "") {
+    if (array_key_exists('data_fine', $_GET) && $_GET["data_fine"] != "") {
         //entrambe le date
         $sql .= 'AND ((data_inizio BETWEEN :data_inizio AND :data_fine) AND (data_fine BETWEEN :data_inizio AND :data_fine)) ';
-        $params["data_inizio"] = $_GET["data_inizio"]." 00:00:00";
-        $params["data_fine"] = $_GET["data_fine"]." 23:59:59";
-    }else{
+        $params["data_inizio"] = $_GET["data_inizio"] . " 00:00:00";
+        $params["data_fine"] = $_GET["data_fine"] . " 23:59:59";
+    } else {
         //solo data inizio
         $sql .= 'AND data_inizio >= :data_inizio ORDER BY data_inizio';
-        $params["data_inizio"] = $_GET["data_inizio"]." 00:00:00";
+        $params["data_inizio"] = $_GET["data_inizio"] . " 00:00:00";
     }
-}else{
-    if (array_key_exists('data_fine', $_GET) && $_GET["data_fine"]!="") {
+} else {
+    if (array_key_exists('data_fine', $_GET) && $_GET["data_fine"] != "") {
         //solo data fine
         $sql .= 'AND data_fine <= :data_fine ORDER BY data_fine';
-        $params["data_fine"] = $_GET["data_fine"]." 23:59:59";
+        $params["data_fine"] = $_GET["data_fine"] . " 23:59:59";
     }
 }
 $stmt = $conn->prepare($sql, [PDO::ATTR_CURSOR => PDO::CURSOR_FWDONLY]);
@@ -65,26 +66,26 @@ $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
             <hr>
             <div id="filter">
                 <form action="">
-                    
+
                     <label for="codice">Codice</label>
-                    <input type="number" placeholder="Codice" name="codice" value="<?php echo $_GET["codice"];?>">
+                    <input type="number" placeholder="Codice" name="codice" value="<?php echo $_GET["codice"]; ?>">
 
                     <label for="titolo">Titolo</label>
-                    <input type="text" placeholder="Titolo" name="titolo" value="<?php echo $_GET["titolo"];?>">
+                    <input type="text" placeholder="Titolo" name="titolo" value="<?php echo $_GET["titolo"]; ?>">
 
                     <label for="creatore">Creatore</label>
-                    <input type="text" placeholder="Creatore" name="creatore" value="<?php echo $_GET["creatore"];?>">
+                    <input type="text" placeholder="Creatore" name="creatore" value="<?php echo $_GET["creatore"]; ?>">
 
                     <p>Ricerca quiz attivi</p>
 
                     <label for="data_inizio">Data Inizio</label>
-                    <input type="date"name="data_inizio" value="<?php echo $_GET["data_inizio"];?>">
-                    
+                    <input type="date" name="data_inizio" value="<?php echo $_GET["data_inizio"]; ?>">
+
                     <label for="data_fine">Data Fine</label>
-                    <input type="date"name="data_fine" value="<?php echo $_GET["data_fine"];?>">
+                    <input type="date" name="data_fine" value="<?php echo $_GET["data_fine"]; ?>">
 
                     <br>
-                    
+
                     <input type="reset" value="Reset">
                     <input type="submit" value="Invia">
 
@@ -105,8 +106,8 @@ $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
                     <tbody>
                         <?php
                         foreach ($result as $row) {
-                            $json=json_encode($row);
-                            echo "<tr class='selectable'  onclick='displayQuiz(".$json.")'>
+                            $json = json_encode($row);
+                            echo "<tr class='selectable'  onclick='displayQuiz(" . $json . ")'>
                                     <td>{$row['codice']}</td>
                                     <td>{$row['titolo']}</td>
                                     <td>{$row['creatore']}</td>
@@ -121,6 +122,10 @@ $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
             </div>
         </div>
     </main>
+
+    
+
+
     <?php
     include "components/footer.html"
     ?>
