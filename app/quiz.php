@@ -82,6 +82,8 @@ $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
                     <input type="date"name="data_fine" value="<?php echo $_GET["data_fine"];?>">
 
                     <br>
+                    
+                    <input type="reset" value="Reset">
                     <input type="submit" value="Invia">
 
                 </form>
