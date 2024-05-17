@@ -1,6 +1,6 @@
 
 const dialog = $("#dialog");
-const jsCloseBtn = dialog.querySelector("#js-close");
+const jsCloseBtn = $("#js-close");
 
 jsCloseBtn.addEventListener("click", (e) => {
   e.preventDefault();
@@ -9,6 +9,6 @@ jsCloseBtn.addEventListener("click", (e) => {
 
 function displayPartecipazione(value){
     dialog.showModal();
-    
+
     console.log(value);
 }
