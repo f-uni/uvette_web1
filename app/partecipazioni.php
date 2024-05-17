@@ -125,7 +125,7 @@ $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
                 <input type="date"name="data" >
             </p>
             <div>
-                <button value="cancel" formmethod="dialog">Cancel</button>
+                <button id="js-close" formmethod="dialog">Cancel</button>
                 <button id="confirmBtn" value="default">Confirm</button>
             </div>
         </form>
