@@ -8,9 +8,9 @@ jsCloseBtn.onclick=(e) => {
 
 function displayPartecipazione(row){
     dialog.showModal();
-    $("#input-utente").val(row.utente)
-    $("#input-titolo-quiz").val(row.titolo)
-    $("#input-quiz").val(row.quiz)
-    
+    $("#input-utente").val(row.utente);
+    $("#input-titolo-quiz").val(row.titolo);
+    $("#input-quiz").val(row.quiz);
+    $("#input-data").val(row.data);
     console.log(row);
 }

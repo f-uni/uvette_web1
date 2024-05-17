@@ -128,7 +128,7 @@ $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
             <input type="text" placeholder="Titolo Quiz" name="titolo" id="input-titolo-quiz" disabled>
             
             <label for="data">Data partecipazione</label>
-            <input type="date"name="data" >
+            <input type="date"name="data" id="input-data" >
             
             <div>
                 <button id="js-close" formmethod="dialog">Annulla</button>
