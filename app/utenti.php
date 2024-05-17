@@ -96,7 +96,7 @@ $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
                                 <td>{$row['nome']}</td>
                                 <td>{$row['cognome']}</td>
                                 <td>{$row['email']}</td>
-                                <td>{$row['partecipazioni']}</td>
+                                <td><a href='/app/partecipazioni.php?utente={$row['nome_utente']}'>{$row['partecipazioni']}</a></td>
                             </tr>";
                         }
                         ?>
