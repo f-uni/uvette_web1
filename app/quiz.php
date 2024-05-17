@@ -44,6 +44,7 @@ if (array_key_exists('data_inizio', $_GET) && $_GET["data_inizio"]!="") {
 echo $sql;
 $stmt = $conn->prepare($sql, [PDO::ATTR_CURSOR => PDO::CURSOR_FWDONLY]);
 $stmt->execute($params);
+$stmt->debugDumpParams();
 $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 ?>
