@@ -1,5 +1,5 @@
-const dialog = $("#dialog");
-const jsCloseBtn = $("#js-close");
+const dialog = document.getElementById("dialog");
+const jsCloseBtn = document.getElementById("js-close");
 
 jsCloseBtn.onclick=(e) => {
   e.preventDefault();
