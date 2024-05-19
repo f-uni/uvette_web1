@@ -48,8 +48,8 @@ dialog button{
 
 #create-btn{
     position: absolute;
-    bottom: 10%;
-    right: 50px;
+    bottom: 80px;
+    right: 40px;
     border-radius: 16px;
     font-size: 30px;
     border:none;
