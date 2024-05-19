@@ -14,8 +14,14 @@
 include "util/connect.php";
 $page = "quiz";
 
-$sql = 'SELECT codice, titolo, creatore, CAST(data_inizio AS DATE) AS data_inizio, CAST(data_fine AS DATE) AS data_fine 
-FROM quiz WHERE 1=1 ';
+$sql = 'SELECT codice, titolo, creatore, CAST(data_inizio AS DATE) AS data_inizio, CAST(data_fine AS DATE) AS data_fine, 
+        (CASE 
+            WHEN partecipazione.codice IS NULL THEN 0
+            ELSE COUNT(partecipazione.codice)
+            END) AS partecipazioni
+        FROM quiz 
+        LEFT JOIN partecipazione ON quiz.codice=partecipazione.quiz
+        WHERE 1=1 ';
 $params = [];
 if (array_key_exists('codice', $_GET) && $_GET["codice"] != "") {
     $sql .= 'AND codice = :codice ';
@@ -47,6 +53,9 @@ if (array_key_exists('data_inizio', $_GET) && $_GET["data_inizio"] != "") {
         $params["data_fine"] = $_GET["data_fine"] . " 23:59:59";
     }
 }
+
+$sql.= 'GROUP BY quiz.codice';
+
 $stmt = $conn->prepare($sql, [PDO::ATTR_CURSOR => PDO::CURSOR_FWDONLY]);
 $stmt->execute($params);
 $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
@@ -114,6 +123,8 @@ $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
                                     <td><a href='/app/utenti.php?nome_utente={$row['creatore']}'>{$row['creatore']}</a></td>
                                     <td>{$row['data_inizio']}</td>
                                     <td>{$row['data_fine']}</td>
+                                    <td><a href='/app/partecipazioni.php?titolo={$row['titolo']}'>{$row['partecipazioni']}</a></td>
+
                                 </tr>";
                         }
                         ?>
