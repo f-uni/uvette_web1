@@ -44,6 +44,8 @@ dialog button{
 
 #deleteBtn{
     background-color: rgb(255, 64, 64);
+    
+    padding: 16px 24px !important;
 }
 
 #create-btn{
