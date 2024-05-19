@@ -16,7 +16,8 @@ $("#create-btn").click((e) => {
     createDialog.showModal();
 });
 
-function displayPartecipazione(row){
+function displayPartecipazione(event, row){
+
     dialog.showModal();
     $("#input-utente").val(row.utente);
     $("#input-titolo-quiz").val(row.titolo);

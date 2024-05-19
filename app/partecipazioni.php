@@ -99,7 +99,7 @@ $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
                         <?php
                             foreach ($result as $row) {
                                 $json=json_encode($row);
-                                echo "<tr class='selectable' onclick='displayPartecipazione(".$json.")'>
+                                echo "<tr class='selectable' onclick='displayPartecipazione(event, ".$json.")'>
                                     <td>{$row['codice']}</td>
                                     <td>{$row['utente']}</td>
                                     <td>{$row['quiz']}</td>
