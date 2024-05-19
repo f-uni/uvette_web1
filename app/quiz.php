@@ -112,6 +112,7 @@ $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
                         <th>Creatore</th>
                         <th>Data Inizio</th>
                         <th>Data Fine</th>
+                        <th>Partecipazioni</th>
                     </thead>
                     <tbody>
                         <?php
