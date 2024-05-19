@@ -59,5 +59,6 @@ dialog button{
     background-color: white;
     .material-icons{
         color: var(--accent-color);
+        font-size: 32px;
     }
 }
