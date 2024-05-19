@@ -1,16 +1,17 @@
 .intestazione{
     font-weight: bold;
-    font-size: 28px;
+    font-style: italic;
+    font-size: 26px;
     margin-top: 0px !important;
     margin-bottom: 30px;
     text-align: center;
     border: none !important;
-    padding: 0 !important;
+    padding: 5px !important;
 }
 
 .testodomanda{
     border: 3px solid var(--accent-color);
-    font-size: 22px;
+    font-size: 20px;
     margin-left: 30px;
     margin-right: 30px;
     padding: 20px;
@@ -37,7 +38,7 @@
 
 p{
     padding: 16px;
-    font-size: 16px;
+    font-size: 18px;
     text-align: center;
     margin-bottom: 0px;
     margin-top: 5px;
