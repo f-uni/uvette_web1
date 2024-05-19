@@ -14,7 +14,7 @@
 include "util/connect.php";
 $page = "quiz";
 
-$sql = 'SELECT quiz.codice, quiz.titolo, quiz.creatore, CAST(quiz.data_inizio AS DATE) AS quiz.data_inizio, CAST(quiz.data_fine AS DATE) AS quiz.data_fine, 
+$sql = 'SELECT quiz.codice, quiz.titolo, quiz.creatore, CAST(quiz.data_inizio AS DATE) AS data_inizio, CAST(quiz.data_fine AS DATE) AS data_fine, 
         (CASE 
             WHEN partecipazione.codice IS NULL THEN 0
             ELSE COUNT(partecipazione.codice)
