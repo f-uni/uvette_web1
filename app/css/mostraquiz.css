@@ -1,11 +1,10 @@
 .intestazione{
     font-weight: bold;
-    font-size: 32px;
+    font-size: 28px;
     margin-top: 0px !important;
     margin-bottom: 30px;
     text-align: center;
     border: none !important;
-    box-shadow: none !important;
     padding: 0 !important;
 }
 
@@ -14,7 +13,7 @@
     font-size: 24px;
     margin-left: 30px;
     margin-right: 30px;
-    padding: 30px;
+    padding: 24px;
     margin-bottom: 20px;
     box-shadow: 5px 4px 8px 0px #00000069;
     background: #ff00bf5c;
@@ -36,7 +35,7 @@
 }
 
 p{
-    padding: 30px;
+    padding: 16px;
     font-size: 16px;
     text-align: center;
     margin-bottom: 0px;
