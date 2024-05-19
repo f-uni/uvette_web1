@@ -1,4 +1,5 @@
 function displayQuiz(event, value){
+    console.log(event);
     if (event.target.tagName === 'a') {
         return;
     }
