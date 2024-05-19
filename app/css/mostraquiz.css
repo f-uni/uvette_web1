@@ -17,7 +17,7 @@
     padding: 30px;
     margin-bottom: 20px;
     box-shadow: 5px 4px 8px 0px #00000069;
-    background-color: #ff00bf5c;
+    background: #ff00bf5c;
 }
 
 .domanda{
@@ -44,5 +44,5 @@ p{
     border-radius: 16px;
     border: 3px solid var(--accent-color-soft);
     box-shadow: 5px 4px 8px 0px #00000069;
-    background-color: #ffa3df59;
+    background: #ffa3df59;
 }
