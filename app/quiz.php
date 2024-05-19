@@ -108,7 +108,7 @@ $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
                         <?php
                         foreach ($result as $row) {
                             $json = json_encode($row);
-                            echo "<tr class='selectable'  onclick='displayQuiz(" . $json . ")'>
+                            echo "<tr class='selectable'  onclick='displayQuiz(event, " . $json . ")'>
                                     <td>{$row['codice']}</td>
                                     <td>{$row['titolo']}</td>
                                     <td><a href='/app/utenti.php?nome_utente={$row['creatore']}'>{$row['creatore']}</a></td>
