@@ -55,10 +55,14 @@ dialog button{
     border:none;
     display: flex;
     padding: 10px;
-    box-shadow: 5px 4px 8px 0px #00000069;
     background-color: white;
+    cursor: pointer;
     .material-icons{
         color: var(--accent-color);
         font-size: 32px;
     }
+}
+
+.elevated{
+    box-shadow: 5px 4px 8px 0px #00000069;
 }
