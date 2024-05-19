@@ -17,6 +17,7 @@
     padding: 30px;
     margin-bottom: 20px;
     box-shadow: 5px 4px 8px 0px #00000069;
+    background-color: #ff00bf5c;
 }
 
 .domanda{
@@ -25,13 +26,13 @@
 
 .risposte{
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: auto auto;
     padding: 5px;
     column-gap: 10px;
     border-radius: 16px;
     margin-bottom: 25px;
-    margin-left: 25px;
-    margin-right: 25px;
+    margin-left: 35px;
+    margin-right: 35px;
 }
 
 p{
@@ -43,4 +44,5 @@ p{
     border-radius: 16px;
     border: 3px solid var(--accent-color-soft);
     box-shadow: 5px 4px 8px 0px #00000069;
+    background-color: #ffa3df59;
 }
