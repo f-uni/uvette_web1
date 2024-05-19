@@ -10,11 +10,11 @@
 
 .testodomanda{
     border: 3px solid var(--accent-color);
-    font-size: 24px;
+    font-size: 22px;
     margin-left: 30px;
     margin-right: 30px;
-    padding: 24px;
-    margin-bottom: 20px;
+    padding: 20px;
+    margin-bottom: 10px;
     box-shadow: 5px 4px 8px 0px #00000069;
     background: #ff00bf5c;
 }
