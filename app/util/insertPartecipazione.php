@@ -41,6 +41,7 @@ if (array_key_exists('data', $_POST) && $_POST["data"] != "" ) {
     set_error("Parametro data non inserito");
 }
 
+echo $err;
 
 if($err){
     http_response_code(400);
