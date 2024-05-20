@@ -1,0 +1,65 @@
+.intestazione{
+    font-weight: bold;
+    font-style: italic;
+    font-size: 26px;
+    margin-top: 0px !important;
+    margin-bottom: 30px;
+    text-align: center;
+    border: none !important;
+    padding: 10px !important;
+}
+
+.testodomanda{
+    border: 3px solid var(--accent-color);
+    font-size: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding: 20px;
+    margin-bottom: 10px;
+    box-shadow: 5px 4px 8px 0px #00000069;
+    background: #ff00bf5c;
+}
+
+.domanda{
+    margin-bottom: 80px;
+}
+
+.risposte{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-row-gap: 2px;
+    padding: 5px;
+    /*column-gap: 10px;*/
+    border-radius: 16px;
+    margin-bottom: 40px;
+    margin-left: 35px;
+    margin-right: 35px;
+}
+
+p{
+    padding: 16px;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top: 5px;
+    border-radius: 16px;
+    border: 3px solid var(--accent-color-soft);
+    box-shadow: 5px 4px 8px 0px #00000069;
+    background: #ffa3df59;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 4px;
+}
+
+.content{
+    padding: 16px 8px 16px 16px !important;
+}
+
+.coretta{
+    background-color: #00ff00;
+}
+
+.sbagliata{
+    background-color: #ff0000;
+}
