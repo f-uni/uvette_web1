@@ -23,9 +23,10 @@ $("#confirmBtn").click((e)=>{
         data: $("#insertForm").serialize(),
         success: (data)=>{
             alert(data.responseText);
+            window.location.reload();
         },
         error: (data)=>{
-            console.log(data);
+            alert(data.responseText);
         }
       });
 });
