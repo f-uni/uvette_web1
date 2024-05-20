@@ -125,7 +125,6 @@ $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
             <label for="utente">Utente</label>
             <input type="text" placeholder="Utente" name="utente" id="input-utente">
 
-            
             <label for="quiz">Codice Quiz</label>
             <input type="number" placeholder="Codice Quiz" name="quiz" id="input-quiz">
             
@@ -144,7 +143,7 @@ $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
     <dialog id="Cdialog">
         
-        <form>
+        <form id="insertForm">
             <label for="utente">Utente</label>
             <input type="text" placeholder="Utente" name="utente" id="input-utente-create">
             

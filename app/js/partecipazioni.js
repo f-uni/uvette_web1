@@ -16,6 +16,24 @@ $("#create-btn").click((e) => {
     createDialog.showModal();
 });
 
+$("#confirmBtn").click((e)=>{
+    $.ajax({
+        type: "POST",
+        url: "/app/util/insertPartecipazione.php",
+        data: $("#insertForm").serialize(),
+        success: (data)=>{
+            console.log(data);
+        },
+        error: (data)=>{
+            console.log(data);
+        }
+      });
+});
+
+$("#insertForm").submit((e)=>{
+    e.preventDefault();
+});
+
 function displayPartecipazione(event, row){
 
     dialog.showModal();
