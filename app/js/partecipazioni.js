@@ -30,6 +30,10 @@ $("#confirmBtn").click((e)=>{
       });
 });
 
+$("#insertForm").submit((e)=>{
+    e.preventDefault();
+});
+
 function displayPartecipazione(event, row){
 
     dialog.showModal();
