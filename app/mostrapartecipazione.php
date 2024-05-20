@@ -27,7 +27,7 @@ $titolo = $result[0]['titolo'];
         WHERE quiz=:quiz';
 */
 
-$sql = 'SELECT domanda.numero, domanda.testo, risposta.testo, risposta.tipo
+$sql = 'SELECT domanda.numero, domanda.testo as domanda, risposta.testo as risposta, risposta.tipo
 FROM `risposta_utente_quiz` JOIN domanda ON domanda.numero=risposta_utente_quiz.domanda AND risposta_utente_quiz.quiz=domanda.quiz 
 JOIN risposta ON risposta_utente_quiz.quiz=risposta.quiz AND risposta_utente_quiz.domanda=risposta.domanda AND risposta_utente_quiz.risposta=risposta.numero
 WHERE partecipazione=1'; //partecipazione=:codice
@@ -48,12 +48,12 @@ $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
                 <div class="domanda">
                     <?php
                     foreach ($result as $row){ ?>
-                        <p class='testodomanda'> DOMANDA <?php echo $row['domanda.numero'].". ".$row['domanda.testo']; ?> </p> 
+                        <p class='testodomanda'> DOMANDA <?php echo $row['numero'].". ".$row['domanda']; ?> </p> 
                         
                         <?php
-                        echo "<div class=' " . $row['risposta.tipo'] . " '>";
+                        echo "<div class=' " . $row['tipo'] . " '>";
                         
-                        echo "<p>".$row['risposta.testo']."</p>";
+                        echo "<p>".$row['risposta']."</p>";
                         ?>
                     </div>
                     <?php
