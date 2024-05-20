@@ -22,7 +22,7 @@ $("#confirmBtn").click((e)=>{
         url: "/app/util/insertPartecipazione.php",
         data: $("#insertForm").serialize(),
         success: (data)=>{
-            console.log(data);
+            alert(data.responseText);
         },
         error: (data)=>{
             console.log(data);
