@@ -21,25 +21,27 @@
 }
 
 .blocco{
-    display:flex;
-    flex-direction: row;
+    display:grid;
+    grid-template-columns: 50% 50%;
+    grid-row-gap: 2px;
+
 }
 
 .domanda{
     margin-bottom: 80px;
 }
 
-.risposte{
+/*.risposte{
     display: grid;
     grid-template-columns: 50% 50%;
     grid-row-gap: 2px;
     padding: 5px;
-    /*column-gap: 10px;*/
     border-radius: 16px;
     margin-bottom: 40px;
     margin-left: 35px;
     margin-right: 35px;
 }
+*/
 
 p{
     padding: 16px;
