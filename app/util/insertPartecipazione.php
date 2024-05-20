@@ -6,6 +6,7 @@ $message="";
 function set_error($msg){
     $err=true;
     $message=$msg;
+    echo "set error";
 }
 
 function exists_row($sql, $params){    
