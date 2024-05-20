@@ -22,7 +22,7 @@
 
 .blocco{
     display:grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 65% 35%;
     grid-row-gap: 2px;
 
 }
