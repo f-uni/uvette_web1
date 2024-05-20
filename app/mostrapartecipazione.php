@@ -48,6 +48,7 @@ $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
                 <div class="domanda">
                     <?php
                     foreach ($result as $row){ ?>
+                    <div class="blocco">
                         <p class='testodomanda'> DOMANDA <?php echo $row['numero'].". ".$row['domanda']; ?> </p> 
                         
                         <?php
@@ -55,7 +56,8 @@ $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
                         
                         echo "<p>".$row['risposta']."</p>";
                         ?>
-                    </div>
+                        </div>
+                    </div>    
                     <?php
                     }
                     ?>

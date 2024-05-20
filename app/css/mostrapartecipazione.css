@@ -20,6 +20,11 @@
     background: #ff00bf5c;
 }
 
+.blocco{
+    display:flex;
+    flex-direction: row;
+}
+
 .domanda{
     margin-bottom: 80px;
 }
@@ -56,10 +61,10 @@ p{
     padding: 16px 8px 16px 16px !important;
 }
 
-.coretta{
+.coretta p{
     background-color: #00ff00;
 }
 
-.sbagliata{
+.sbagliata p{
     background-color: #ff0000;
 }
