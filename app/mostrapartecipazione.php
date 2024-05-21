@@ -30,7 +30,7 @@ $titolo = $result[0]['titolo'];
 $sql = 'SELECT domanda.numero, domanda.testo as domanda, risposta.testo as risposta, risposta.tipo
 FROM `risposta_utente_quiz` JOIN domanda ON domanda.numero=risposta_utente_quiz.domanda AND risposta_utente_quiz.quiz=domanda.quiz 
 JOIN risposta ON risposta_utente_quiz.quiz=risposta.quiz AND risposta_utente_quiz.domanda=risposta.domanda AND risposta_utente_quiz.risposta=risposta.numero
-WHERE partecipazione=1'; //partecipazione=:codice
+WHERE partecipazione=:codice'; //partecipazione=:codice
 
 $stmt = $conn->prepare($sql, [PDO::ATTR_CURSOR => PDO::CURSOR_FWDONLY]);
 $stmt->execute(['codice'=>$codice]);
