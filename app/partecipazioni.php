@@ -117,8 +117,8 @@ $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
     </main>
     <dialog id="UDdialog">
         <div class="actions">
+            <button class="elevated" id="viewBtn" value="default"><i class="material-icons">visibility</i>Mostra</button>
             <button class="elevated" id="deleteBtn" value="default"><i class="material-icons">delete</i></button>
-            <button class="elevated" id="viewBtn" value="default"><i class="material-icons">delete</i></button>
         </div>
          
         <form>
