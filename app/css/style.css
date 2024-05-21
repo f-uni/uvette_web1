@@ -61,3 +61,42 @@ main {
     box-shadow: 5px 4px 8px 0px #00000069;
     background-color: white;
 }
+
+.main-content {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.list-group-item {
+    border: none;
+    border-radius: 10px;
+    padding: 15px 20px;
+    margin-bottom: 10px;
+    background-color: #ffa3df59;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+
+h3{
+    background-color: #ff00bf5c; /* Colore di sfondo */
+    padding: 10px 15px; /* Spaziatura interna */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px; /* Angoli arrotondati */
+    margin-bottom: 15px; /* Spaziatura esterna */
+    display: inline-block; /* Mantiene il background stretto al contenuto */
+}
+
+.gif-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.gif-container img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 10px; /* Aggiungi angoli arrotondati se lo desideri */
+}
