@@ -12,7 +12,6 @@ $("#js-close-create").click((e) => {
 })
 
 $("#create-btn").click((e) => {
-    console.log("click")
     createDialog.showModal();
 });
 
@@ -31,16 +30,38 @@ $("#confirmBtn").click((e)=>{
       });
 });
 
-$("#insertForm").submit((e)=>{
-    e.preventDefault();
-});
 
 function displayPartecipazione(event, row){
+    let tagA=event.target.tagName.toLowerCase() === 'a';
+    if (!tagA) {
+        $("#input-utente").val(row.utente);
+        $("#input-titolo-quiz").val(row.titolo);
+        $("#input-quiz").val(row.quiz);
+        $("#input-data").val(row.data);
 
-    dialog.showModal();
-    $("#input-utente").val(row.utente);
-    $("#input-titolo-quiz").val(row.titolo);
-    $("#input-quiz").val(row.quiz);
-    $("#input-data").val(row.data);
-    console.log(row);
+        $("#viewBtn").click((e)=>{
+            window.open("/app/mostrapartecipazione.php?codice="+row.codice, "_blank");
+        });
+
+        $("#deleteBtn").click((e)=>{
+            var myFormData = new FormData();
+            myformData.append('codice', row.codice);
+            $.ajax({
+                type: "POST",
+                url: "/app/util/deletePartecipazione.php",
+                data: myFormData,
+                success: (data)=>{
+                    alert(data.responseText);
+                    window.location.reload();
+                },
+                error: (data)=>{
+                    alert(data.responseText);
+                }
+              });
+        });
+
+        dialog.showModal();
+    }
+
+    
 }

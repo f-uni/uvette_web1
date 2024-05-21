@@ -118,6 +118,7 @@ $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
     <dialog id="UDdialog">
         <div class="actions">
             <button class="elevated" id="deleteBtn" value="default"><i class="material-icons">delete</i></button>
+            <button class="elevated" id="viewBtn" value="default"><i class="material-icons">delete</i></button>
         </div>
          
         <form>
@@ -134,11 +135,11 @@ $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
             <label for="data">Data partecipazione</label>
             <input type="date"name="data" id="input-data" >
             
-            <div class="actions">
-                <button class="elevated" id="updateBtn" value="default"><i class="material-icons">edit</i>Modifica</button>
-                <button id="js-close" formmethod="dialog">Annulla</button>
-            </div>
         </form>
+        <div class="actions">
+            <button class="elevated" id="updateBtn" value="default"><i class="material-icons">edit</i>Modifica</button>
+            <button id="js-close" formmethod="dialog">Annulla</button>
+        </div>
     </dialog>
 
     <dialog id="Cdialog">
@@ -156,11 +157,11 @@ $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
             <label for="data">Data partecipazione</label>
             <input type="date"name="data" id="input-data-create" >
             
-            <div class="actions">
-                <button class="elevated" id="confirmBtn" value="default">Salva</button>
-                <button id="js-close-create" formmethod="dialog">Annulla</button>
-            </div>
         </form>
+        <div class="actions">
+            <button class="elevated" id="confirmBtn" value="default">Salva</button>
+            <button id="js-close-create" formmethod="dialog">Annulla</button>
+        </div>
     </dialog>
     <?php
     include "components/footer.html"
