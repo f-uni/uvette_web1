@@ -1,0 +1,77 @@
+.intestazione{
+    font-weight: bold;
+    font-style: italic;
+    font-size: 26px;
+    margin-top: 0px;
+    margin-bottom: 30px;
+    margin-right: 10px;
+    text-align: center;
+    border-radius: 16px;
+    padding: 10px;
+    box-shadow: 5px 4px 8px 0px #00000069;
+    background: #ffa3df59;
+}
+
+h2{
+    padding: 10px 15px; 
+    box-shadow: 5px 4px 8px 0px #00000069;
+    background: #ffa3df59;
+    border-radius: 16px; 
+    margin-bottom: 15px; 
+    margin-right: 10px;
+}
+
+h3{
+    padding: 10px 15px; 
+    box-shadow: 5px 4px 8px 0px #00000069;
+    background: #ffa3df59;
+    border-radius: 16px; 
+    margin-bottom: 15px; 
+    display: inline-block; /* Mantiene il background stretto al contenuto */
+}
+
+.gif-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.gif-container img {
+    max-width: 30%;
+    height: auto;
+    border-radius: 10px; 
+}
+
+.main-content {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.list-group-item {
+    border: none;
+    border-radius: 16px;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    background-color: #ffa3df59;
+    box-shadow: 5px 4px 8px 0px #00000069;
+    transition: all 0.3s ease;
+    /*display: flex;*/
+    align-items: center;
+    display: inline-block;
+}
+
+p{
+    font-size: 16px;
+    margin: 10px;
+}
+
+table thead {
+    top: 0;
+    font-size: 16px;
+}
+
+table {
+    width: 80%;
+    margin: 20px;
+}
