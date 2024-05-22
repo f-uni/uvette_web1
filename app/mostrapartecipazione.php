@@ -18,7 +18,7 @@ $sql = 'SELECT *
         WHERE codice=:quiz';
 
 $stmt = $conn->prepare($sql, [PDO::ATTR_CURSOR => PDO::CURSOR_FWDONLY]);
-$stmt->execute(['quiz'=>$quiz]);
+$stmt->execute(['quiz'=>$codice]);
 $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
 $titolo = $result[0]['titolo'];
 
