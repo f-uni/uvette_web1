@@ -21,13 +21,17 @@ h2{
     margin-right: 10px;
 }
 
-h3{
+.tit{
+    /*font-weight: bold;*/
+    font-size: 22px;
     padding: 10px 15px; 
     box-shadow: 5px 4px 8px 0px #00000069;
     background: #ffa3df59;
     border-radius: 16px; 
     margin-bottom: 15px; 
-    display: inline-block; /* Mantiene il background stretto al contenuto */
+    /* display: inline-block; /* Mantiene il background stretto al contenuto */
+    display: flex;
+    max-width: min-content;
 }
 
 .gif-container {
@@ -75,3 +79,76 @@ table {
     width: 80%;
     margin: 20px;
 }
+
+.tastor{
+    display: inline-block;
+    flex-direction: column;
+    justify-content: center;
+    margin: 4px;
+    border-radius: 16px;
+    padding: 4px;
+    appearance: auto;
+    user-select: none;
+    align-items: flex-start;
+    text-align: center;
+    cursor: default;
+    box-sizing: border-box;
+    background-color: buttonface;
+    color: buttontext;
+    white-space: pre;
+    padding-block: 1px;
+    padding-inline: 6px;
+    border-width: 2px;
+    border-style: outset;
+    border-color: buttonborder;
+    border-image: initial;
+}
+
+.material-icons{
+    font-size: 30px;
+    margin: 5px;
+}
+
+.titolo{
+    padding: 10px 15px; 
+    box-shadow: 5px 4px 8px 0px #00000069;
+    background: #ffa3df59;
+    border-radius: 16px; 
+    margin-bottom: 15px; 
+    display: inline-block;
+}
+
+.list-group{
+    display: grid;
+    grid-template-columns: 80%;
+    grid-row-gap: 2px;
+    padding: 5px;
+    border-radius: 16px;
+    margin-left: 35px;
+    margin-right: 35px;
+}
+
+.polaroid-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.polaroid {
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+    width: 150px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+.polaroid .color-box {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 10px;
+}
+.polaroid p {
+    margin: 5px 0;
+}
+

@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="/app/css/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="/app/css/home.css">
+    <link rel="stylesheet" href="/app/css/style.css">
+
 </head>
 <?php
 $page = "home";
@@ -32,44 +34,22 @@ $page = "home";
                         <p class="lead">Qui troverete informazioni utili per facilitare l'utilizzo del sito e aggiornamenti sui nostri servizi.</p>
                     </section>
                     <div class="gif-container">
-                        <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbGIxdjIzZ3Vhc2U3MjhqZ3g0dXk2dGo1aHdqbHR6emIyYjExMGQwciZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/UJwM7mwAo8IR7VNI2T/giphy.gif" class="img-fluid">
+                        <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExeG12M3kxZWg0ejBicHNyb3BwNmlrM25zc3kzb2RyNGxleTk3aXgxMSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/8hmpCDQbnOhUe47Raa/giphy.gif" class="img-fluid">
                     </div>
                     <section>
                         <h2>Struttura ed utilizzo del sito</h2>
                         <p>Questa sezione descrive la struttura e come navigare ed utilizzare il sito web.</p>
-                        <ol class="list-group">
-                            <li class="list-group-item">
-                                <i class="material-icons">home</i>
-                                <a> Home: </a>
-                                <p>La pagina principale del sito.</p>
-                            </li>
-                            <li class="list-group-item">
-                                <i class="material-icons">people</i>
-                                <a> Utenti: </a>
-                                <p>Informazioni sugli utenti iscritti.</p>
-                            </li>
-                            <li class="list-group-item">
-                                <i class="material-icons">question_answer</i>
-                                <a>Quiz:   </a>
-                                <p>Elenco di tutti i quiz disponibili.</p>
-                            </li>
-                            <li class="list-group-item">
-                                <i class="material-icons">comment</i>
-                                <a>Partecipazioni:   </a>
-                                <p>Storico delle partecipazioni ai quiz.</p>
-                            </li>
-                        </ol>
 
                         <article>
-                            <h3>1. Home</h3>
+                            <p class="tit"><i class="material-icons">home</i><a>Home</a></p>
                             <p>La Home è la pagina principale che si apre all'avvio del sito.</p>
                             <p>In questa sezione abbiamo inserito tutte le informazioni fondamentali.</p>
                         </article>
 
                         <article>
-                            <h3>2. Utenti</h3>
+                            <p class="tit"><i class="material-icons">people</i><a>Utenti</a></p>
                             <p>La pagina Utenti contiene una tabella con tutti gli utenti iscritti al sito, suddivisi per:</p>
-                            <table class="table table-striped">
+                            <table class="table">
                                 <thead>
                                     <tr>
                                         <th>Nome utente</th>
@@ -83,9 +63,9 @@ $page = "home";
                             <p>Cliccando su "Partecipazioni", si aprirà una pagina con l'elenco dei quiz che l'utente ha svolto.</p>
                         </article>
                         <article>
-                            <h3>3. Quiz</h3>
+                            <p class="tit"><i class="material-icons">question_answer</i><a>Quiz</a></p>
                             <p>La pagina Quiz contiene una tabella con tutti i quiz disponibili nel sito, suddivisi per:</p>
-                            <table class="table table-striped">
+                            <table class="table">
                                 <thead>
                                     <tr>
                                         <th>Codice</th>
@@ -102,7 +82,7 @@ $page = "home";
                         </article>
 
                         <article>
-                            <h3>4. Partecipazioni</h3>
+                            <p class="tit"><i class="material-icons">comment</i><a>Partecipazioni<a></p>
                             <p>La pagina Partecipazioni contiene una tabella con tutti i quiz disponibili nel sito, suddivisi per:</p>
                             <table class="table">
                                 <thead>
@@ -120,7 +100,7 @@ $page = "home";
                         </article>
 
                         <article>
-                            <h3>Barra di navigazione laterale</h3>
+                            <h3 class="titolo">Barra di navigazione laterale</h3>
                             <p>Sulla sinistra è presente una barra di navigazione divisa in due parti:</p>
                             <ul class="list-group">
                                 <li class="list-group-item">
@@ -132,7 +112,8 @@ $page = "home";
                                     <p> permette di cercare ciò che desideri.</p>
                                 </li>
                             </ul>
-                            <p>La ricerca effettuata verrà mantenuta in memoria per permetterti di vedere ciò che hai cercato. Se vuoi cancellare la ricerca, premi il tasto "Reset".</p>
+                            <p>La ricerca effettuata verrà mantenuta in memoria per permetterti di vedere ciò che hai cercato. Se vuoi cancellare la ricerca, premi il tasto <p class="tastor">Reset</p> .</p>
+
                         </article>
                     </section>
 
@@ -144,6 +125,64 @@ $page = "home";
                     <section>
                         <h2>Palette di colori</h2>
                         <p>Questa sezione mostra la palette di colori utilizzata per il design del sito.</p>
+                        <table>
+                <thead>
+                    <tr>
+                        <th>Colore</th>
+                        <th>Nome</th>
+                        <th>Codice Esadecimale</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><div class="colors" style="background-color: #FF45D0"></div></td>
+                        <td>Purple pizza</td>
+                        <td>#FF45D0</td>
+                    </tr>
+                    <tr>
+                        <td><div class="colors" style="background-color: #333;"></div></td>
+                        <td>Shocking pink</td>
+                        <td>#FF00BF</td>
+                    </tr>
+                    <tr>
+                        <td><div class="colors" style="background-color: #ddd;"></div></td>
+                        <td>Lavander pink</td>
+                        <td>#FFA3DF</td>
+                    </tr>
+                    <tr>
+                        <td><div class="colors" style="background-color: #f2f2f2;"></div></td>
+                        <td>Maize</td>
+                        <td>#FFF172</td>
+                    </tr>
+                    <tr>
+                        <td><div class="colors" style="background-color: #f2f2f2;"></div></td>
+                        <td>Lemon ciffon</td>
+                        <td>#FFFBB8</td>
+                    </tr>
+                </tbody>
+            </table>
+                <div class="polaroid-container">
+                    <div class="polaroid">
+                        <div class="colors" style="background-color: #4CAF50;"></div>
+                        <p>Purple pizza</p>
+                        <p>#4CAF50</p>
+                    </div>
+                    <div class="polaroid">
+                        <div class="colors" style="background-color: #333;"></div>
+                        <p>Grigio Scuro</p>
+                        <p>#333333</p>
+                    </div>
+                    <div class="polaroid">
+                        <div class="colors" style="background-color: #ddd;"></div>
+                        <p>Grigio Chiaro</p>
+                        <p>#dddddd</p>
+                    </div>
+                    <div class="polaroid">
+                        <div class="colors" style="background-color: #f2f2f2;"></div>
+                        <p>Grigio Molto Chiaro</p>
+                        <p>#f2f2f2</p>
+                    </div>
+                </div>
                     </section>
                 </div>
             </div>
