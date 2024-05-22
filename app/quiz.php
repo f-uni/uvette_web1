@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="/app/css/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <script src="js/quiz.js"></script>
+    
 </head>
 <?php
 include "util/connect.php";
@@ -95,9 +95,8 @@ $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
                     <input type="date" name="data_fine" value="<?php echo $_GET["data_fine"]; ?>">
 
                     <br>
-
-                    <input type="reset" value="Reset">
                     <input type="submit" value="Invia">
+                    <input type="reset" value="Reset" onclick="reset()">
 
                 </form>
             </div>
@@ -142,6 +141,10 @@ $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
     <?php
     include "components/footer.html"
     ?>
+
+<script src="js/quiz.js"></script>
+<script src="js/form.js"></script> 
+
 </body>
 
 </html>

@@ -79,7 +79,7 @@ $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
                     <br>
                     <input type="submit" value="Invia">
-
+                    <input type="reset" value="Reset" onclick="reset()">
                 </form>
             </div>
 
@@ -127,7 +127,7 @@ $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
             <input type="text" placeholder="Utente" name="utente" id="input-utente">
 
             <label for="quiz">Codice Quiz</label>
-            <input type="number" placeholder="Codice Quiz" name="quiz" id="input-quiz">
+            <input type="number" placeholder="Codice Quiz" name="quiz" id="input-quiz" onchange="updateTitolo('#input-quiz', '#input-titolo-quiz')">
             
             <label for="titolo">Titolo Quiz</label>
             <input type="text" placeholder="Titolo Quiz" name="titolo" id="input-titolo-quiz" disabled>
@@ -149,10 +149,10 @@ $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
             <input type="text" placeholder="Utente" name="utente" id="input-utente-create">
             
             <label for="quiz">Codice Quiz</label>
-            <input type="number" placeholder="Codice Quiz" name="quiz" id="input-quiz-create">
+            <input type="number" placeholder="Codice Quiz" name="quiz" id="input-quiz-create" onchange="updateTitolo('#input-quiz-create', '#input-titolo-quiz-create')">
             
             <label for="titolo">Titolo Quiz</label>
-            <input type="text" placeholder="Titolo Quiz" name="titolo" id="input-titolo-quiz-create" disabled>
+            <input type="text" name="titolo" id="input-titolo-quiz-create" disabled>
             
             <label for="data">Data partecipazione</label>
             <input type="date"name="data" id="input-data-create" >
@@ -168,5 +168,6 @@ $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
     ?>
 
 <script src="js/partecipazioni.js"></script> 
+<script src="js/form.js"></script> 
 </body> 
 </html>
