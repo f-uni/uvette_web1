@@ -46,14 +46,14 @@ function displayPartecipazione(event, row) {
         });
 
         $("#deleteBtn").click((e) => {
-            var myFormData = new FormData();
-            myFormData.append('codice', row.codice);
 
             if(confirm("Procedere con l'eliminazione della partecipazione "+row.codice+"?\nVerranno eliminate anche tutte le risposte della partecipazione")){
                 $.ajax({
                     type: "POST",
                     url: "/app/util/deletePartecipazione.php",
-                    data: myFormData.serialize(),
+                    data: {
+                        "codice":row.codice
+                    },
                     success: (data) => {
                         alert(data);
                         window.location.reload();
