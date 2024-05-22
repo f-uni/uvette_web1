@@ -23,12 +23,11 @@ $("#confirmBtn").click((e)=>{
         url: "/app/util/insertPartecipazione.php",
         data: $("#insertForm").serialize(),
         success: (data)=>{
-            console.log(data);
-            alert(data.responseText);
+            alert(data);
             //window.location.reload();
         },
         error: (data)=>{
-            alert(data.responseText);
+            alert("ERRORE:\n"+data.responseText);
         }
       });
 });
@@ -55,7 +54,7 @@ function displayPartecipazione(event, row){
                 data: myFormData,
                 success: (data)=>{
                     console.log(data);
-                    alert(data.responseText);
+                    alert(data);
                     //window.location.reload();
                 },
                 error: (data)=>{
