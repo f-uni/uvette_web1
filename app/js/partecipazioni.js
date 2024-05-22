@@ -15,14 +15,17 @@ $("#create-btn").click((e) => {
     createDialog.showModal();
 });
 
+
+
 $("#confirmBtn").click((e)=>{
     $.ajax({
         type: "POST",
         url: "/app/util/insertPartecipazione.php",
         data: $("#insertForm").serialize(),
         success: (data)=>{
+            console.log(data);
             alert(data.responseText);
-            window.location.reload();
+            //window.location.reload();
         },
         error: (data)=>{
             alert(data.responseText);
