@@ -75,8 +75,7 @@ function displayPartecipazione(event, row) {
 function updateTitolo(){
     $.ajax({
         type: "GET",
-        url: "/app/util/getTitolo.php?codice="+$("#input-titolo-quiz-create").val(),
-        data: $("#insertForm").serialize(),
+        url: "/app/util/getTitolo.php?codice="+$("#input-quiz-create").val(),
         success: (data) => {
             $("#input-titolo-quiz-create").val(data);
         },
