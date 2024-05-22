@@ -77,7 +77,7 @@ $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
                     
                     <br>
                     <input type="submit" value="Invia">
-                    <input type="reset" value="Reset">
+                    <input type="reset" value="Reset" onclick="reset()">
                 </form>
             </div>
 
