@@ -61,7 +61,7 @@ if($err){
     echo "\n".$utente." ".$quiz." ".$data;
 }else{
     http_response_code(200);
-    echo $utente." ".$quiz." ".$data;
+    echo "\n".$utente." ".$quiz." ".$data;
     
 }
 
