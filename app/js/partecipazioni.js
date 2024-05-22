@@ -53,7 +53,7 @@ function displayPartecipazione(event, row) {
                 $.ajax({
                     type: "POST",
                     url: "/app/util/deletePartecipazione.php",
-                    data: myFormData,
+                    data: myFormData.serialize(),
                     success: (data) => {
                         alert(data);
                         window.location.reload();
