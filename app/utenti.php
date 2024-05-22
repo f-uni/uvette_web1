@@ -112,6 +112,8 @@ $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
     <?php
     include "components/footer.html"
     ?>
+
+<script src="js/quiz.js"></script>
 </body>
 
 </html>

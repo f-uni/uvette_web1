@@ -168,5 +168,6 @@ $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
     ?>
 
 <script src="js/partecipazioni.js"></script> 
+<script src="js/form.js"></script> 
 </body> 
 </html>
