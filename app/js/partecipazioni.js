@@ -2,8 +2,8 @@ const dialog = document.getElementById("UDdialog");
 const createDialog = document.getElementById("Cdialog");
 
 $("#js-close").click((e) => {
-  e.preventDefault();
-  dialog.close();
+    e.preventDefault();
+    dialog.close();
 });
 
 $("#js-close-create").click((e) => {
@@ -17,54 +17,53 @@ $("#create-btn").click((e) => {
 
 
 
-$("#confirmBtn").click((e)=>{
+$("#confirmBtn").click((e) => {
     $.ajax({
         type: "POST",
         url: "/app/util/insertPartecipazione.php",
         data: $("#insertForm").serialize(),
-        success: (data)=>{
+        success: (data) => {
             alert(data);
-            //window.location.reload();
+            window.location.reload();
         },
-        error: (data)=>{
-            alert("ERRORE:\n"+data.responseText);
+        error: (data) => {
+            alert("ERRORE:\n" + data.responseText);
         }
-      });
+    });
 });
 
 
-function displayPartecipazione(event, row){
-    let tagA=event.target.tagName.toLowerCase() === 'a';
+function displayPartecipazione(event, row) {
+    let tagA = event.target.tagName.toLowerCase() === 'a';
     if (!tagA) {
         $("#input-utente").val(row.utente);
         $("#input-titolo-quiz").val(row.titolo);
         $("#input-quiz").val(row.quiz);
         $("#input-data").val(row.data);
 
-        $("#viewBtn").click((e)=>{
-            window.open("/app/mostrapartecipazione.php?codice="+row.codice, "_blank");
+        $("#viewBtn").click((e) => {
+            window.open("/app/mostrapartecipazione.php?codice=" + row.codice, "_blank");
         });
 
-        $("#deleteBtn").click((e)=>{
+        $("#deleteBtn").click((e) => {
             var myFormData = new FormData();
-            myformData.append('codice', row.codice);
+            myFormData.append('codice', row.codice);
             $.ajax({
                 type: "POST",
                 url: "/app/util/deletePartecipazione.php",
                 data: myFormData,
-                success: (data)=>{
-                    console.log(data);
+                success: (data) => {
                     alert(data);
-                    //window.location.reload();
+                    window.location.reload();
                 },
-                error: (data)=>{
+                error: (data) => {
                     alert(data.responseText);
                 }
-              });
+            });
         });
 
         dialog.showModal();
     }
 
-    
+
 }
