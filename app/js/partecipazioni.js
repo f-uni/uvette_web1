@@ -71,3 +71,17 @@ function displayPartecipazione(event, row) {
 
 
 }
+
+function updateTitolo(){
+    $.ajax({
+        type: "GET",
+        url: "/app/util/getTitolo.php?codice="+$("#input-titolo-quiz-create").val(),
+        data: $("#insertForm").serialize(),
+        success: (data) => {
+            $("#input-titolo-quiz-create").val(data);
+        },
+        error: (data) => {
+            //alert("ERRORE:\n" + data.responseText);
+        }
+    });
+}
