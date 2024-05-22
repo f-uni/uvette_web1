@@ -114,6 +114,6 @@ $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
     ?>
 
 <script src="js/quiz.js"></script>
-</body>
+</body> 
 
 </html>
