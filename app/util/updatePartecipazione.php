@@ -73,13 +73,13 @@ if($err){
 }else{
 
     include "connect.php";
-    $stmt = $conn->prepare("INSERT INTO `partecipazione`(`utente`, `quiz`, `data`) VALUES (:utente,:quiz,:data)", [PDO::ATTR_CURSOR => PDO::CURSOR_FWDONLY]);
-    if($stmt->execute(["utente"=>$utente,"quiz"=>$quiz, "data"=>$data])){
+    $stmt = $conn->prepare("UPDATE `partecipazione` SET `utente`=:utente,`quiz`=:quiz,`data`=:data WHERE codice=:codice", [PDO::ATTR_CURSOR => PDO::CURSOR_FWDONLY]);
+    if($stmt->execute(["codice"=>$codice, "utente"=>$utente,"quiz"=>$quiz, "data"=>$data])){
         http_response_code(200);
-        echo "Inserimento avvenuto con successo";
+        echo "Aggiornamento avvenuto con successo";
     }else{
         http_response_code(500);
-        echo "ERRORE:\nNon è stato possibile inserire la partecipazione";
+        echo "ERRORE:\nNon è stato possibile aggiornare la partecipazione";
     }
 
 
