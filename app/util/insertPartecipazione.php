@@ -61,7 +61,7 @@ if($err){
 }else{
 
     include "connect.php";
-    $stmt = $conn->prepare("INSERT INTO `partecipazione`(`utente`, `quiz`, `data`) VALUES (':utente',':quiz',':data')", [PDO::ATTR_CURSOR => PDO::CURSOR_FWDONLY]);
+    $stmt = $conn->prepare("INSERT INTO `partecipazione`(`utente`, `quiz`, `data`) VALUES (:utente,:quiz,:data)", [PDO::ATTR_CURSOR => PDO::CURSOR_FWDONLY]);
     if($stmt->execute(["utente"=>$utente,"quiz"=>$quiz, "data"=>$data])){
         http_response_code(200);
         echo "Inserimento avvenuto con successo";
