@@ -3,6 +3,9 @@
 $err=false;
 $message="";
 
+$utente="";
+$quiz="";
+$data="";
 
 function exists_row($sql, $params){    
     include "connect.php";
@@ -54,6 +57,8 @@ if (array_key_exists('quiz', $_POST) && $_POST["quiz"] != "" ) {
 if($err){
     http_response_code(400);
     echo $message;
+    
+    echo "\n".$utente." ".$quiz." ".$data;
 }else{
     http_response_code(200);
     echo $utente." ".$quiz." ".$data;
