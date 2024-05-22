@@ -51,8 +51,9 @@ function displayPartecipazione(event, row){
                 url: "/app/util/deletePartecipazione.php",
                 data: myFormData,
                 success: (data)=>{
+                    console.log(data);
                     alert(data.responseText);
-                    window.location.reload();
+                    //window.location.reload();
                 },
                 error: (data)=>{
                     alert(data.responseText);
