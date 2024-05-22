@@ -35,6 +35,7 @@ if (array_key_exists('quiz', $_POST) && $_POST["quiz"] != "" ) {
 
     if (array_key_exists('data', $_POST) && $_POST["data"] != "" ) {
         $data=$_POST["data"];
+        include "connect.php";
         $stmt = $conn->prepare("SELECT COUNT(*) from quiz WHERE codice=:quiz AND :data BETWEEN data_inizio AND data_fine ", [PDO::ATTR_CURSOR => PDO::CURSOR_FWDONLY]);
         $stmt->execute(["quiz"=>$quiz, ":data"=>$data]);
         if($stmt->fetchColumn()!=1){
