@@ -72,12 +72,12 @@ function displayPartecipazione(event, row) {
 
 }
 
-function updateTitolo(){
+function updateTitolo(inputElement, outputElement){
     $.ajax({
         type: "GET",
-        url: "/app/util/getTitolo.php?codice="+$("#input-quiz-create").val(),
+        url: "/app/util/getTitolo.php?codice="+$(inputElement).val(),
         success: (data) => {
-            $("#input-titolo-quiz-create").val(data);
+            $(outputElement).val(data);
         },
         error: (data) => {
             //alert("ERRORE:\n" + data.responseText);
