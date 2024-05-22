@@ -73,7 +73,11 @@ $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
                     <label for="email">Email</label>
                     <input type="text" placeholder="Email" name="email" value="<?php echo $_GET["email"];?>">
-                    <input type="submit">
+                    
+                    
+                    <br>
+                    <input type="submit" value="Invia">
+                    <input type="reset" value="Reset">
                 </form>
             </div>
 
