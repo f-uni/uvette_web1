@@ -69,3 +69,7 @@ button{
 .elevated{
     box-shadow: 5px 4px 8px 0px #00000069;
 }
+
+.reset-btn{
+    background-color: grey;
+}
