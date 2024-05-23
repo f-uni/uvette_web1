@@ -14,13 +14,13 @@ dialog{
     max-width: 600px;
 }
 
-dialog .actions{
+.actions{
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
 }
 
-dialog button{
+button{
     background-color: var(--accent-color);
     border: none;
     color: white;
@@ -68,4 +68,8 @@ dialog button{
 
 .elevated{
     box-shadow: 5px 4px 8px 0px #00000069;
+}
+
+.reset-btn{
+    background-color: grey;
 }

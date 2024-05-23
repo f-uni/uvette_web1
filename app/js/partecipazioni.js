@@ -66,6 +66,27 @@ function displayPartecipazione(event, row) {
             
         });
 
+        $("#updateBtn").click((e) => {
+
+            if(confirm("Procedere con l'aggiornamento della partecipazione "+row.codice+"?")){
+                $.ajax({
+                    type: "POST",
+                    url: "/app/util/updatePartecipazione.php",
+                    data: {
+                        "codice":row.codice
+                    },
+                    success: (data) => {
+                        alert(data);
+                        window.location.reload();
+                    },
+                    error: (data) => {
+                        alert(data.responseText);
+                    }
+                });
+            }
+            
+        });
+
         dialog.showModal();
     }
 

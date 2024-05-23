@@ -1,3 +1,3 @@
-function reset(){
-    $(':input').val('');
+function resetInput(){
+    window.location = window.location.href.split("?")[0];
 }

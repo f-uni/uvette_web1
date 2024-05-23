@@ -51,6 +51,7 @@ $stmt->execute($params);
 $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
 ?>
 
+<script src="js/form.js"></script> 
 <body>
     <?php include "components/header.php" ?>
 
@@ -78,8 +79,11 @@ $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
                     <input type="date"name="data_fine" value="<?php echo $_GET["data_fine"];?>">
 
                     <br>
-                    <input type="submit" value="Invia">
-                    <input type="reset" value="Reset" onclick="reset()">
+
+                    <div class="actions">
+                        <input type="submit" value="Invia">
+                        <button class="reset-btn" onclick="resetInput()"><i class="material-icons">refresh</i></button>
+                    </div>
                 </form>
             </div>
 
@@ -168,6 +172,5 @@ $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
     ?>
 
 <script src="js/partecipazioni.js"></script> 
-<script src="js/form.js"></script> 
 </body> 
 </html>
