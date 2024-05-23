@@ -14,7 +14,7 @@ dialog{
     max-width: 600px;
 }
 
-dialog .actions{
+.actions{
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
