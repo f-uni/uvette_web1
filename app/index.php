@@ -36,157 +36,139 @@ $page = "home";
                     <div class="gif-container">
                         <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExeG12M3kxZWg0ejBicHNyb3BwNmlrM25zc3kzb2RyNGxleTk3aXgxMSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/8hmpCDQbnOhUe47Raa/giphy.gif" class="img-fluid">
                     </div>
-                    <section>
-                        <h2>Struttura ed utilizzo del sito</h2>
-                        <p>Questa sezione descrive la struttura e come navigare ed utilizzare il sito web.</p>
+                    <section class="site-structure">
+    <div>
+        <h2>Esplora il sito</h2>
+        <p>Scopri la struttura del sito e come navigare facilmente.</p>
+    </div>
 
-                        <article>
-                            <p class="tit"><i class="material-icons">home</i><a>Home</a></p>
-                            <p>La Home è la pagina principale che si apre all'avvio del sito.</p>
-                            <p>In questa sezione abbiamo inserito tutte le informazioni fondamentali.</p>
-                        </article>
+    <div class="article-container">
+        <article class="site-feature">
+            <div class="feature-icon">
+                <i class="material-icons">home</i>
+                <h3>Home</h3>
+            </div>
+            <div class="feature-content">
+                <p class="description">La pagina principale del sito, ricca di informazioni utili.</p>
+            </div>
+        </article>
 
-                        <article>
-                            <p class="tit"><i class="material-icons">people</i><a>Utenti</a></p>
-                            <p>La pagina Utenti contiene una tabella con tutti gli utenti iscritti al sito, suddivisi per:</p>
-                            <table class="table">
-                                <thead>
-                                    <tr>
-                                        <th>Nome utente</th>
-                                        <th>Nome</th>
-                                        <th>Cognome</th>
-                                        <th>Email</th>
-                                        <th>Partecipazioni</th>
-                                    </tr>
-                                </thead>
-                            </table>
-                            <p>Cliccando su "Partecipazioni", si aprirà una pagina con l'elenco dei quiz che l'utente ha svolto.</p>
-                        </article>
-                        <article>
-                            <p class="tit"><i class="material-icons">question_answer</i><a>Quiz</a></p>
-                            <p>La pagina Quiz contiene una tabella con tutti i quiz disponibili nel sito, suddivisi per:</p>
-                            <table class="table">
-                                <thead>
-                                    <tr>
-                                        <th>Codice</th>
-                                        <th>Titolo</th>
-                                        <th>Creatore</th>
-                                        <th>Data Inizio</th>
-                                        <th>Data Fine</th>
-                                        <th>Partecipazioni</th>
-                                    </tr>
-                                </thead>
-                            </table>
-                               
-                            <p>Cliccando sulla riga, si aprirà la pagina relativa al quiz selezionato.</p>
-                        </article>
+        <article class="site-feature">
+            <div class="feature-icon">
+                <i class="material-icons">people</i>
+                <h3>Utenti</h3>
+            </div>
+            <div class="feature-content">
+                <p class="description">Esplora tutti gli utenti iscritti e le loro informazioni.</p>
+            </div>
+        </article>
 
-                        <article>
-                            <p class="tit"><i class="material-icons">comment</i><a>Partecipazioni<a></p>
-                            <p>La pagina Partecipazioni contiene una tabella con tutti i quiz disponibili nel sito, suddivisi per:</p>
-                            <table class="table">
-                                <thead>
-                                    <tr>
-                                        <th>Codice</th>
-                                        <th>Utente</th>
-                                        <th>Codice Quiz</th>
-                                        <th>Quiz</th>
-                                        <th>Data</th>
-                                    </tr>
-                                </thead>
-                            </table>
-                        
-                            <p>Cliccando sulla riga, si aprirà un pop-up che permette di modificare la partecipazione.</p>
-                        </article>
+        <article class="site-feature">
+            <div class="feature-icon">
+                <i class="material-icons">question_answer</i>
+                <h3>Quiz</h3>
+            </div>
+            <div class="feature-content">
+                <p class="description">Scopri tutti i quiz disponibili e mettiti alla prova!</p>
+            </div>
+        </article>
 
-                        <article>
-                            <h3 class="titolo">Barra di navigazione laterale</h3>
-                            <p>Sulla sinistra è presente una barra di navigazione divisa in due parti:</p>
-                            <ul class="list-group">
-                                <li class="list-group-item">
-                                    <a>Menù:</a>
-                                    <p> presenta le quattro sezioni che rimandano alle rispettive pagine dedicate.</p>
-                                </li>
-                                <li class="list-group-item">
-                                    <a>Filtro di ricerca:</a>
-                                    <p> permette di cercare ciò che desideri.</p>
-                                </li>
-                            </ul>
-                            <p>La ricerca effettuata verrà mantenuta in memoria per permetterti di vedere ciò che hai cercato. Se vuoi cancellare la ricerca, premi il tasto <p class="tastor">Reset</p> .</p>
+        <article class="site-feature">
+            <div class="feature-icon">
+                <i class="material-icons">comment</i>
+                <h3>Partecipazioni</h3>
+            </div>
+            <div class="feature-content">
+                <p class="description">Consulta le partecipazioni passate e modifica i dettagli.</p>
+            </div>
+        </article>
 
-                        </article>
-                    </section>
+        <article class="sidebar-navigation">
+            <div class="feature-content">
+                <h3>Barra di navigazione laterale</h3>
+                <p>Esplora le sezioni del sito e utilizza il filtro di ricerca.</p>
+            </div>
+        </article>
+    </div>
+</section>
 
                     <section>
                         <h2>Tools utilizzati</h2>
                         <p>Qui trovi un elenco dei tools utilizzati per creare questo sito.</p>
+                        <div class="polaroid-container">
+                                <div class="tool-card">
+                            <i class="fas fa-code tool-icon"></i>
+                            <div class="tool-name">Visual Studio Code</div>
+                            <div class="tool-description">Un potente editor di codice sorgente.</div>
+                            <a href="https://code.visualstudio.com/" class="tool-link" target="_blank">Visita il sito</a>
+                        </div>
+                        <div class="tool-card">
+                            <i class="fab fa-html5 tool-icon"></i>
+                            <div class="tool-name">HTML</div>
+                            <div class="tool-description">Il linguaggio standard per creare pagine web.</div>
+                            <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" class="tool-link" target="_blank">Visita il sito</a>
+                        </div>
+                        <div class="tool-card">
+                            <i class="fab fa-css3-alt tool-icon"></i>
+                            <div class="tool-name">CSS</div>
+                            <div class="tool-description">Utilizzato per descrivere la presentazione di un documento HTML.</div>
+                            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" class="tool-link" target="_blank">Visita il sito</a>
+                        </div>
+                        <div class="tool-card">
+                            <i class="fab fa-js tool-icon"></i>
+                            <div class="tool-name">JavaScript</div>
+                            <div class="tool-description">Un linguaggio di programmazione che consente di creare contenuti dinamici.</div>
+                            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" class="tool-link" target="_blank">Visita il sito</a>
+                        </div>
+                        <div class="tool-card">
+                            <i class="fab fa-php tool-icon"></i>
+                            <div class="tool-name">PHP</div>
+                            <div class="tool-description">Un linguaggio di scripting lato server progettato per lo sviluppo web.</div>
+                            <a href="https://www.php.net/" class="tool-link" target="_blank">Visita il sito</a>
+                        </div>
+                        
+                        <div class="tool-card">
+                            <i class="fas fa-server tool-icon"></i>
+                            <div class="tool-name">Altervista</div>
+                            <div class="tool-description">Un servizio di hosting web gratuito per i tuoi progetti.</div>
+                            <a href="https://it.altervista.org/" class="tool-link" target="_blank">Visita il sito</a>
+                        </div>
+                    
                     </section>
+
 
                     <section>
                         <h2>Palette di colori</h2>
                         <p>Questa sezione mostra la palette di colori utilizzata per il design del sito.</p>
-                        <table>
-                <thead>
-                    <tr>
-                        <th>Colore</th>
-                        <th>Nome</th>
-                        <th>Codice Esadecimale</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><div class="colors" style="background-color: #FF45D0"></div></td>
-                        <td>Purple pizza</td>
-                        <td>#FF45D0</td>
-                    </tr>
-                    <tr>
-                        <td><div class="colors" style="background-color: #333;"></div></td>
-                        <td>Shocking pink</td>
-                        <td>#FF00BF</td>
-                    </tr>
-                    <tr>
-                        <td><div class="colors" style="background-color: #ddd;"></div></td>
-                        <td>Lavander pink</td>
-                        <td>#FFA3DF</td>
-                    </tr>
-                    <tr>
-                        <td><div class="colors" style="background-color: #f2f2f2;"></div></td>
-                        <td>Maize</td>
-                        <td>#FFF172</td>
-                    </tr>
-                    <tr>
-                        <td><div class="colors" style="background-color: #f2f2f2;"></div></td>
-                        <td>Lemon ciffon</td>
-                        <td>#FFFBB8</td>
-                    </tr>
-                </tbody>
-            </table>
-                <div class="polaroid-container">
+                              
+            
+                    <div class="polaroid-container">
                     <div class="polaroid">
-                        <div class="colors" style="background-color: #4CAF50;"></div>
+                        <div class="color-box" style="background-color: var(--footer-color);"></div>
                         <p>Purple pizza</p>
-                        <p>#4CAF50</p>
+                        <p>#FF45D0</p>
                     </div>
                     <div class="polaroid">
-                        <div class="colors" style="background-color: #333;"></div>
-                        <p>Grigio Scuro</p>
-                        <p>#333333</p>
+                        <div class="color-box" style="background-color: var(--accent-color);"></div>
+                        <p>Shocking pink</p>
+                        <p>#FF00BF</p>
                     </div>
                     <div class="polaroid">
-                        <div class="colors" style="background-color: #ddd;"></div>
-                        <p>Grigio Chiaro</p>
-                        <p>#dddddd</p>
+                        <div class="color-box" style="background-color: var(--accent-color-soft);"></div>
+                        <p>Lavander pink</p>
+                        <p>#FFA3DF</p>
                     </div>
                     <div class="polaroid">
-                        <div class="colors" style="background-color: #f2f2f2;"></div>
-                        <p>Grigio Molto Chiaro</p>
-                        <p>#f2f2f2</p>
+                        <div class="color-box" style="background-color: var(--contrast-color);"></div>
+                        <p>Maize</p>
+                        <p>#FFF172</p>
                     </div>
-                </div>
-                    </section>
-                </div>
-            </div>
-        </div>
+                    <div class="polaroid">
+                        <div class="color-box" style="background-color: var(--contrast-color-soft);"></div>
+                        <p>Lemon ciffon</p>
+                        <p>#FFFBB8</p>
+                    </div>
+                
     </main>
     <?php
     include "components/footer.html"
