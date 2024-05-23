@@ -24,7 +24,7 @@ $sql = 'SELECT quiz.codice, quiz.titolo, quiz.creatore, CAST(quiz.data_inizio AS
         WHERE 1=1 ';
 $params = [];
 if (array_key_exists('codice', $_GET) && $_GET["codice"] != "") {
-    $sql .= 'AND codice = :codice ';
+    $sql .= 'AND quiz.codice = :codice ';
     $params["codice"] = $_GET["codice"];
 }
 if (array_key_exists('titolo', $_GET)) {
