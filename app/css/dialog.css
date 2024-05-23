@@ -20,7 +20,7 @@ dialog .actions{
     justify-content: space-between;
 }
 
-dialog button{
+button{
     background-color: var(--accent-color);
     border: none;
     color: white;
