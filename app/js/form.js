@@ -1,3 +1,3 @@
 function reset(){
-    $('#new_user_form input').not('[type=submit]').val('');
+    window.location = window.location.href.split("?")[0];
 }
