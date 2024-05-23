@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="/app/css/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="/app/css/home.css">
-    <link rel="stylesheet" href="/app/css/style.css">
 
 </head>
 <?php
@@ -85,7 +84,7 @@ $page = "home";
 
         <article class="sidebar-navigation">
             <div class="feature-content">
-                <h3>Barra di navigazione laterale</h3>
+                <h2>Barra di navigazione laterale</h2>
                 <p>Esplora le sezioni del sito e utilizza il filtro di ricerca.</p>
             </div>
         </article>
