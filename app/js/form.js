@@ -1,4 +1,3 @@
 function reset(){
-    console.log("reset");
-    $(':input').val('');
+    $('#new_user_form input').not('[type=submit]').val('');
 }
