@@ -79,10 +79,10 @@ $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
                     <input type="date"name="data_fine" value="<?php echo $_GET["data_fine"];?>">
 
                     <br>
-                    
+
                     <div class="actions">
                         <input type="submit" value="Invia">
-                        <button class="reset-btn" onclick="reset()"><i class="material-icons">refresh</i></button>
+                        <button class="reset-btn" onclick="resetInput()"><i class="material-icons">refresh</i></button>
                     </div>
                 </form>
             </div>
