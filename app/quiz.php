@@ -62,6 +62,7 @@ $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 ?>
 
+<script src="js/form.js"></script> 
 <body>
     <?php include "components/header.php" ?>
 
@@ -143,7 +144,6 @@ $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
     ?>
 
 <script src="js/quiz.js"></script>
-<script src="js/form.js"></script> 
 
 </body>
 
