@@ -45,30 +45,6 @@ p{
     margin: 10px;
 }
 
-.tastor{
-    display: inline-block;
-    flex-direction: column;
-    justify-content: center;
-    margin: 4px;
-    border-radius: 16px;
-    padding: 4px;
-    appearance: auto;
-    user-select: none;
-    align-items: flex-start;
-    text-align: center;
-    cursor: default;
-    box-sizing: border-box;
-    background-color: buttonface;
-    color: buttontext;
-    white-space: pre;
-    padding-block: 1px;
-    padding-inline: 6px;
-    border-width: 2px;
-    border-style: outset;
-    border-color: buttonborder;
-    border-image: initial;
-}
-
 .material-icons{
     font-size: 30px;
     margin: 5px;
