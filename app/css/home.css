@@ -21,19 +21,6 @@ h2{
     margin-right: 10px;
 }
 
-.tit{
-    /*font-weight: bold;*/
-    font-size: 22px;
-    padding: 10px 15px; 
-    box-shadow: 5px 4px 8px 0px #00000069;
-    background: #ffa3df59;
-    border-radius: 16px; 
-    margin-bottom: 15px; 
-    /* display: inline-block; /* Mantiene il background stretto al contenuto */
-    display: flex;
-    max-width: min-content;
-}
-
 .gif-container {
     text-align: center;
     margin: 20px 0;
@@ -51,7 +38,6 @@ h2{
     border-radius: 16px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
-
 
 p{
     font-size: 16px;
