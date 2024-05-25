@@ -51,7 +51,9 @@ function displayPartecipazione(event, row) {
                 $.ajax({
                     type: "POST",
                     url: "/app/util/deletePartecipazione.php",
-                    data: $("#updateForm").serialize(),
+                    data: {
+                        "codice":row.codice
+                    },
                     success: (data) => {
                         alert(data);
                         window.location.reload();
@@ -70,9 +72,7 @@ function displayPartecipazione(event, row) {
                 $.ajax({
                     type: "POST",
                     url: "/app/util/updatePartecipazione.php",
-                    data: {
-                        "codice":row.codice
-                    },
+                    data: $("#updateForm").serialize(),
                     success: (data) => {
                         alert(data);
                         window.location.reload();
