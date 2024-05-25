@@ -82,7 +82,7 @@ $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
                     <div class="actions">
                         <input type="submit" value="Invia">
-                        <button class="reset-btn" onclick="resetInput()"><i class="material-icons">refresh</i></button>
+                        <button class="reset-btn" type="reset" onclick="resetInput()"><i class="material-icons">refresh</i></button>
                     </div>
                 </form>
             </div>
