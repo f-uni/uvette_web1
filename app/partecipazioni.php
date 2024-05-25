@@ -133,7 +133,9 @@ $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
         </div>
          
         <form id="updateForm">
-            
+            <label for="codice">Codice</label>
+            <input type="text" placeholder="Codice" name="codice" id="input-codice" disabled>    
+
             <label for="utente">Utente</label>
             <input type="text" placeholder="Utente" name="utente" id="input-utente">
 

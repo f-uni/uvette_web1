@@ -36,6 +36,8 @@ $("#confirmBtn").click((e) => {
 function displayPartecipazione(event, row) {
     let tagA = event.target.tagName.toLowerCase() === 'a';
     if (!tagA) {
+        
+        $("#input-codice").val(row.codice);
         $("#input-utente").val(row.utente);
         $("#input-titolo-quiz").val(row.titolo);
         $("#input-quiz").val(row.quiz);
