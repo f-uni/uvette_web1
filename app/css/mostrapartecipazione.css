@@ -45,6 +45,7 @@ p{
     flex-direction: column;
     justify-content: center;
     margin: 4px;
+    word-break: break-word;
 }
 
 .content{
