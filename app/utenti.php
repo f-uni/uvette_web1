@@ -75,10 +75,11 @@ $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
                     <label for="email">Email</label>
                     <input type="text" placeholder="Email" name="email" value="<?php echo $_GET["email"];?>">
                     
-                    
                     <br>
-                    <input type="submit" value="Invia">
-                    <input type="reset" value="Reset" onclick="reset()">
+                    <div class="actions">
+                        <input type="submit" value="Invia">
+                        <button class="reset-btn" type="reset" onclick="resetInput()"><i class="material-icons">refresh</i></button>
+                    </div>
                 </form>
             </div>
 
