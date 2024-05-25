@@ -69,12 +69,15 @@ function displayPartecipazione(event, row) {
         });
 
         $("#updateBtn").off("click").click((e) => {
+            var disabled = $("#updateForm").find(':input:disabled').removeAttr('disabled');
+            var serialized = $("#updateForm").serialize();
+            disabled.attr('disabled','disabled');
 
             if(confirm("Procedere con l'aggiornamento della partecipazione "+row.codice+"?")){
                 $.ajax({
                     type: "POST",
                     url: "/app/util/updatePartecipazione.php",
-                    data: $("#updateForm").serialize(),
+                    data: serialized,
                     success: (data) => {
                         alert(data);
                         window.location.reload();
