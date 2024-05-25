@@ -132,7 +132,7 @@ $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
             <button class="elevated" id="deleteBtn" value="default"><i class="material-icons">delete</i></button>
         </div>
          
-        <form>
+        <form id="updateForm">
             
             <label for="utente">Utente</label>
             <input type="text" placeholder="Utente" name="utente" id="input-utente">

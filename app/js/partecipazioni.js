@@ -51,9 +51,7 @@ function displayPartecipazione(event, row) {
                 $.ajax({
                     type: "POST",
                     url: "/app/util/deletePartecipazione.php",
-                    data: {
-                        "codice":row.codice
-                    },
+                    data: $("#updateForm").serialize(),
                     success: (data) => {
                         alert(data);
                         window.location.reload();
