@@ -71,7 +71,7 @@ $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
                 <form action="#">
 
                     <label for="codice">Codice</label>
-                    <input type="text" placeholder="Codice" name="codice" value="<?php echo $_GET["codice"];?>" >
+                    <input type="number" placeholder="Codice" name="codice" value="<?php echo $_GET["codice"];?>" >
 
                     <label for="utente">Utente</label>
                     <input type="text" placeholder="Utente" name="utente" value="<?php echo $_GET["utente"];?>" >
