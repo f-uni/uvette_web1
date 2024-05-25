@@ -40,7 +40,7 @@ if (array_key_exists('quiz', $_POST) && $_POST["quiz"] != "" ) {
         $stmt->execute(["quiz"=>$quiz, "data"=>$data]);
         if($stmt->fetchColumn()!=1){
             $err=true;
-            $message.="La data inserita non è valida per il quiz selezionato\n";
+            $message.="La data inserita non è valida, non rientra nel periodo di validità del quiz\n";
         }
     }else{
         $err=true;

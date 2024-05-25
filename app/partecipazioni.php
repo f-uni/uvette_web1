@@ -18,7 +18,10 @@ $sql = 'SELECT partecipazione.codice, partecipazione.utente, partecipazione.quiz
         FROM partecipazione 
         INNER JOIN quiz ON quiz.codice=partecipazione.quiz WHERE 1=1 ';
 
-
+if (array_key_exists('codice', $_GET) && $_GET["codice"] != "") {
+    $sql .= 'AND partecipazione.codice = :codice ';
+    $params["codice"] = $_GET["codice"];
+}
 if (array_key_exists('titolo', $_GET)) {
     $sql .= 'AND titolo like :titolo ';
     $params["titolo"] = "%".$_GET["titolo"]."%";
@@ -66,6 +69,10 @@ $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
             <hr>
             <div id="filter">
                 <form action="#">
+
+                    <label for="codice">Codice</label>
+                    <input type="text" placeholder="Codice" name="codice" value="<?php echo $_GET["codice"];?>" >
+
                     <label for="utente">Utente</label>
                     <input type="text" placeholder="Utente" name="utente" value="<?php echo $_GET["utente"];?>" >
 
@@ -105,9 +112,9 @@ $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
                                 $json=json_encode($row);
                                 echo "<tr class='selectable' onclick='displayPartecipazione(event, ".$json.")'>
                                     <td>{$row['codice']}</td>
-                                    <td>{$row['utente']}</td>
-                                    <td>{$row['quiz']}</td>
-                                    <td>{$row['titolo']}</td>
+                                    <td><a href='/app/utenti.php?nome_utente={$row['utente']}'>{$row['utente']}</a></td>
+                                    <td><a href='/app/quiz.php?codice={$row['quiz']}'>{$row['quiz']}</a></td>
+                                    <td><a href='/app/quiz.php?codice={$row['quiz']}'>{$row['titolo']}</a></td>
                                     <td>{$row['data']}</td>
                                 </tr>";
                             }
