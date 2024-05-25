@@ -41,11 +41,11 @@ function displayPartecipazione(event, row) {
         $("#input-quiz").val(row.quiz);
         $("#input-data").val(row.data);
 
-        $("#viewBtn").click((e) => {
+        $("#viewBtn").off("click").click((e) => {
             window.open("/app/mostrapartecipazione.php?codice=" + row.codice, "_blank");
         });
 
-        $("#deleteBtn").click((e) => {
+        $("#deleteBtn").off("click").click((e) => {
 
             if(confirm("Procedere con l'eliminazione della partecipazione "+row.codice+"?\nVerranno eliminate anche tutte le risposte della partecipazione")){
                 $.ajax({
@@ -66,7 +66,7 @@ function displayPartecipazione(event, row) {
             
         });
 
-        $("#updateBtn").click((e) => {
+        $("#updateBtn").off("click").click((e) => {
 
             if(confirm("Procedere con l'aggiornamento della partecipazione "+row.codice+"?")){
                 $.ajax({
