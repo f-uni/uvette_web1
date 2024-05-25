@@ -160,13 +160,13 @@ $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
             <input type="text" placeholder="Utente" name="utente" id="input-utente-create">
             
             <label for="quiz">Codice Quiz</label>
-            <input type="number" placeholder="Codice Quiz" name="quiz" id="input-quiz-create" onchange="updateTitolo('#input-quiz-create', '#input-titolo-quiz-create')">
+            <input type="number" placeholder="Codice Quiz" name="quiz" id="input-quiz-create" onchange="updateTitolo('#input-quiz-create', '#input-titolo-quiz-create')" disabled>
             
             <label for="titolo">Titolo Quiz</label>
             <input type="text" name="titolo" id="input-titolo-quiz-create" disabled>
             
             <label for="data">Data partecipazione</label>
-            <input type="date"name="data" id="input-data-create" >
+            <input type="date"name="data" id="input-data-create">
             
         </form>
         <div class="actions">
