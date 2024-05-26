@@ -99,23 +99,23 @@ $page = "home";
                         <i class="material-icons">people</i>
                     </div>
                     <h3>Gestione utenti</h3>
-                    <p>Cliccando sul numero di partecipazioni, verrai reindirizzato alla pagina delle partecipazioni, dove potrai visualizzare tutte le attività svolte da quell'utente. 
-                        Nel menu dei filtri laterali, troverai il campo del nome utente, mentre nella barra di ricerca potrai digitare il nome utente desiderato per visualizzare tutti gli utenti che contengono quella stringa nel loro nome.</p>
+                    <p>Cliccando sul numero di partecipazioni, verrai reindirizzato alla pagina "partecipazioni", dove potrai visualizzare tutte le attività svolte da quell'utente (la barra laterale del nome utente verrà compilata automaticamente). 
+                        Nel menu dei filtri laterali, nella barra di ricerca potrai digitare il nome utente desiderato per visualizzare tutti gli utenti che contengono quella stringa nel loro nome.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">
                         <i class="material-icons">question_answer</i>
                     </div>
                     <h3>Quiz disponibili</h3>
-                    <p>Interagisci con la tabella: clicca sulla riga per aprire una nuova finestra con il quiz corrispondente, sul nome del creatore per visualizzare il suo profilo nella sezione UTENTI, e sul numero di partecipazioni per vedere l'elenco completo di tutte le partecipazioni relative a quel quiz. 
-                        <em><br><small>Il codice utente è disponibile per semplificare le operazioni di modifica e aggiunta nel CRUD delle partecipazioni.</br></small></em></p>
+                    <p>Interagisci con la tabella: clicca sulla riga per aprire una nuova finestra con il quiz corrispondente, sul nome del creatore per visualizzare il suo profilo nella pagina "utenti" e sul numero di partecipazioni per vedere, nella specifica pagina, l'elenco completo di tutte le partecipazioni relative a quel quiz. 
+                        <em><br><small>Il codice quiz è disponibile per semplificare le operazioni di modifica e aggiunta nel CRUD delle partecipazioni.</br></small></em></p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">
                         <i class="material-icons">comment</i>
                     </div>
                     <h3>Partecipazioni</h3>
-                    <p>Clicca su una partecipazione per modificarla, eliminarla o visualizzare i dettagli. In basso a destra, troverai l'icona "+" per aggiungere facilmente nuove partecipazioni tramite una finestra di dialogo. 
+                    <p>Clicca su una partecipazione per modificarla, eliminarla o visualizzarne i dettagli. In basso a destra, troverai l'icona "+" per aggiungere facilmente nuove partecipazioni tramite una finestra di dialogo. 
                         Nella visualizzazione del quiz compilato dall'utente, le risposte corrette sono evidenziate con un bordo verde, mentre quelle errate con un bordo rosso.</p>
                 </div>
             </div>
@@ -126,7 +126,7 @@ $page = "home";
             <ul class="date-filters">
                 <li><strong>Solo data di inizio:</strong> Se viene inserita solo la data di inizio, verranno mostrati i quiz che iniziano dopo la data specificata, indipendentemente dalla data di fine.</li>
                 <li><strong>Solo data di fine:</strong> Se viene inserita solo la data di fine, verranno visualizzati i quiz che terminano prima della data specificata, indipendentemente dalla data di inizio.</li>
-                <li><strong>Entrambe le date:</strong> Se vengono inserite entrambe le date, i quiz visualizzati saranno quelli che iniziano dopo la data di inizio e terminano prima della data di fine, oppure quelli il cui periodo di svolgimento è compreso tra le due date specificate.</li>
+                <li><strong>Entrambe le date:</strong> Se vengono inserite entrambe le date, i quiz visualizzati saranno quelli che iniziano dopo la data di inizio, quelli che terminano prima della data di fine e quelli il cui periodo di svolgimento è compreso tra le due date specificate.</li>
             </ul>
         </section>
 
