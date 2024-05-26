@@ -30,10 +30,9 @@ $page = "home";
         <div class="content">
         <section>
         <p class="intestazione"> Benvenuti su Quiz Online! </p>
-            <p class="lead">Qui troverete informazioni utili per facilitare l'utilizzo del sito e aggiornamenti sui nostri servizi.</p>
-        
+            <p class="lead">Scopri come utilizzare al meglio il nostro sito e rimani aggiornato con le ultime novità!</p>
             <div class="gif-container">
-                <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExeG12M3kxZWg0ejBicHNyb3BwNmlrM25zc3kzb2RyNGxleTk3aXgxMSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/8hmpCDQbnOhUe47Raa/giphy.gif" class="img-fluid">
+                <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExeG12M3kxZWg0ejBicHNyb3BwNmlrM25zc3kzb2RyNGxleTk3aXgxMSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/8hmpCDQbnOhUe47Raa/giphy.gif" alt="Welcome GIF" class="img-fluid">
             </div>
         </section>
         <section class="site-structure">
@@ -90,6 +89,43 @@ $page = "home";
                     </div>
                 </article>
             </div>
+        </section>
+            
+        <section class="features-section">
+            <h2>Funzionalità del Sito</h2>
+            <div class="features-container">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="material-icons">people</i>
+                    </div>
+                    <h3>Gestione utenti</h3>
+                    <p>Visualizza tutti gli utenti registrati. Clicca sul numero di partecipazioni per vedere i dettagli delle attività di ciascun utente. Usa i filtri laterali per trovare rapidamente un utente specifico.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="material-icons">question_answer</i>
+                    </div>
+                    <h3>Quiz disponibili</h3>
+                    <p>Esplora tutti i quiz disponibili e metti alla prova le tue conoscenze! Clicca su un quiz per maggiori dettagli, sul nome del creatore per vedere il suo profilo, e sul numero di partecipazioni per visualizzare chi ha partecipato.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="material-icons">comment</i>
+                    </div>
+                    <h3>Partecipazioni</h3>
+                    <p>Consulta e gestisci tutte le partecipazioni ai quiz. Clicca su una partecipazione per modificarla, eliminarla o visualizzare i dettagli. In basso a destra, clicca sull'icona "+" per aprire una finestra di dialogo e aggiungere facilmente nuove partecipazioni. </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="date-filters-section">
+            <h2 class="section-title">Filtri sulle Date</h2>
+            <p>Il codice utente viene visualizzato per facilitare la modifica o l'aggiunta delle partecipazioni nel CRUD. Per quanto riguarda i filtri sulle date:</p>
+            <ul class="date-filters">
+                <li><strong>Solo data di inizio:</strong> Se viene inserita solo la data di inizio, verranno mostrati i quiz che iniziano dopo la data specificata, indipendentemente dalla data di fine.</li>
+                <li><strong>Solo data di fine:</strong> Se viene inserita solo la data di fine, verranno visualizzati i quiz che terminano prima della data specificata, indipendentemente dalla data di inizio.</li>
+                <li><strong>Entrambe le date:</strong> Se vengono inserite entrambe le date, i quiz visualizzati saranno quelli che iniziano dopo la data di inizio e terminano prima della data di fine, oppure quelli il cui periodo di svolgimento è compreso tra le due date specificate.</li>
+            </ul>
         </section>
 
         <section>
@@ -180,7 +216,5 @@ $page = "home";
     include "components/footer.html"
     ?>
 </body>
-<script>
-    
-</script>
+
 </html>
