@@ -99,28 +99,30 @@ $page = "home";
                         <i class="material-icons">people</i>
                     </div>
                     <h3>Gestione utenti</h3>
-                    <p>Visualizza tutti gli utenti registrati. Clicca sul numero di partecipazioni per vedere i dettagli delle attività di ciascun utente. Usa i filtri laterali per trovare rapidamente un utente specifico.</p>
+                    <p>Cliccando sul numero di partecipazioni, verrai reindirizzato alla pagina delle partecipazioni, dove potrai visualizzare tutte le attività svolte da quell'utente. 
+                        Nel menu dei filtri laterali, troverai il campo del nome utente, mentre nella barra di ricerca potrai digitare il nome utente desiderato per visualizzare tutti gli utenti che contengono quella stringa nel loro nome.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">
                         <i class="material-icons">question_answer</i>
                     </div>
                     <h3>Quiz disponibili</h3>
-                    <p>Esplora tutti i quiz disponibili e metti alla prova le tue conoscenze! Clicca su un quiz per maggiori dettagli, sul nome del creatore per vedere il suo profilo, e sul numero di partecipazioni per visualizzare chi ha partecipato.</p>
+                    <p>Interagisci con la tabella: clicca sulla riga per aprire una nuova finestra con il quiz corrispondente, sul nome del creatore per visualizzare il suo profilo nella sezione UTENTI, e sul numero di partecipazioni per vedere l'elenco completo di tutte le partecipazioni relative a quel quiz. 
+                        <em><br><small>Il codice utente è disponibile per semplificare le operazioni di modifica e aggiunta nel CRUD delle partecipazioni.</br></small></em></p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">
                         <i class="material-icons">comment</i>
                     </div>
                     <h3>Partecipazioni</h3>
-                    <p>Consulta e gestisci tutte le partecipazioni ai quiz. Clicca su una partecipazione per modificarla, eliminarla o visualizzare i dettagli. In basso a destra, clicca sull'icona "+" per aprire una finestra di dialogo e aggiungere facilmente nuove partecipazioni. </p>
+                    <p>Clicca su una partecipazione per modificarla, eliminarla o visualizzare i dettagli. In basso a destra, troverai l'icona "+" per aggiungere facilmente nuove partecipazioni tramite una finestra di dialogo. 
+                        Nella visualizzazione del quiz compilato dall'utente, le risposte corrette sono evidenziate con un bordo verde, mentre quelle errate con un bordo rosso.</p>
                 </div>
             </div>
         </section>
 
         <section class="date-filters-section">
             <h2 class="section-title">Filtri sulle Date</h2>
-            <p>Il codice utente viene visualizzato per facilitare la modifica o l'aggiunta delle partecipazioni nel CRUD. Per quanto riguarda i filtri sulle date:</p>
             <ul class="date-filters">
                 <li><strong>Solo data di inizio:</strong> Se viene inserita solo la data di inizio, verranno mostrati i quiz che iniziano dopo la data specificata, indipendentemente dalla data di fine.</li>
                 <li><strong>Solo data di fine:</strong> Se viene inserita solo la data di fine, verranno visualizzati i quiz che terminano prima della data specificata, indipendentemente dalla data di inizio.</li>
