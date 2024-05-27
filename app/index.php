@@ -32,7 +32,7 @@ $page = "home";
         <p class="intestazione"> Benvenuti su Quiz Online! </p>
             <p class="lead">Scopri come utilizzare al meglio il nostro sito e rimani aggiornato con le ultime novità!</p>
             <div class="gif-container">
-                <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExeG12M3kxZWg0ejBicHNyb3BwNmlrM25zc3kzb2RyNGxleTk3aXgxMSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/8hmpCDQbnOhUe47Raa/giphy.gif" alt="Welcome GIF" class="img-fluid">
+                <img src="/app/assets/giphy.gif" alt="Welcome GIF" class="img-fluid">
             </div>
         </section>
         <section class="site-structure">
@@ -136,7 +136,7 @@ $page = "home";
             <div class="polaroid-container">
                     <div class="tool-card">
                 <i class="fas fa-code tool-icon"></i>
-                <img src="https://raw.githubusercontent.com/f-uni/uvette_web1/main/app/assets/vsc.jpg" alt="Visual Studio Code" class="tool-image">
+                <img src="/app/assets/vsc.jpg" alt="Visual Studio Code" class="tool-image">
                 <div class="tool-name">Visual Studio Code</div>
                 <div class="tool-description">Un potente editor di codice sorgente.</div>
                 <a href="https://code.visualstudio.com/" class="tool-link" target="_blank">Visita il sito</a>
