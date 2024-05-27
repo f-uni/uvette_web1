@@ -143,28 +143,28 @@ $page = "home";
             </div>
             <div class="tool-card">
                 <i class="fab fa-html5 tool-icon"></i>
-                <img src="https://raw.githubusercontent.com/f-uni/uvette_web1/main/app/assets/html.jpg" alt="HTML" class="tool-image">
+                <img src="/app/assets/html.jpg" alt="HTML" class="tool-image">
                 <div class="tool-name">HTML</div>
                 <div class="tool-description">Il linguaggio standard per creare pagine web.</div>
                 <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" class="tool-link" target="_blank">Visita il sito</a>
             </div>
             <div class="tool-card">
                 <i class="fab fa-css3-alt tool-icon"></i>
-                <img src="https://raw.githubusercontent.com/f-uni/uvette_web1/main/app/assets/css.jpg" alt="CSS" class="tool-image">
+                <img src="/app/assets/css.jpg" alt="CSS" class="tool-image">
                 <div class="tool-name">CSS</div>
                 <div class="tool-description">Utilizzato per descrivere la presentazione di un documento HTML.</div>
                 <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" class="tool-link" target="_blank">Visita il sito</a>
             </div>
             <div class="tool-card">
                 <i class="fab fa-js tool-icon"></i>
-                <img src="https://raw.githubusercontent.com/f-uni/uvette_web1/main/app/assets/JavaScript.png" alt="JavaScript" class="tool-image">
+                <img src="/app/assets/JavaScript.png" alt="JavaScript" class="tool-image">
                 <div class="tool-name">JavaScript</div>
                 <div class="tool-description">Un linguaggio di programmazione che consente di creare contenuti dinamici.</div>
                 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" class="tool-link" target="_blank">Visita il sito</a>
             </div>
             <div class="tool-card">
                 <i class="fab fa-php tool-icon"></i>
-                <img src="https://raw.githubusercontent.com/f-uni/uvette_web1/main/app/assets/php.png" alt="php" class="tool-image">
+                <img src="/app/assets/php.png" alt="php" class="tool-image">
                 <div class="tool-name">PHP</div>
                 <div class="tool-description">Un linguaggio di scripting lato server progettato per lo sviluppo web.</div>
                 <a href="https://www.php.net/" class="tool-link" target="_blank">Visita il sito</a>
@@ -172,7 +172,7 @@ $page = "home";
             
             <div class="tool-card">
                 <i class="fas fa-server tool-icon"></i>
-                <img src="https://raw.githubusercontent.com/f-uni/uvette_web1/main/app/assets/Altervista.png" alt="Altervista" class="tool-image">
+                <img src="/app/assets/Altervista.png" alt="Altervista" class="tool-image">
                 <div class="tool-name">Altervista</div>
                 <div class="tool-description">Un servizio di hosting web gratuito per i tuoi progetti.</div>
                 <a href="https://it.altervista.org/" class="tool-link" target="_blank">Visita il sito</a>
